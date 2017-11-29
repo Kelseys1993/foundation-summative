@@ -11,7 +11,7 @@
        settings: {
          arrows: true,
          centerMode: true,
-         centerPadding: '40px',
+         centerPadding: '60px',
          slidesToShow: 3
        }
      }, {

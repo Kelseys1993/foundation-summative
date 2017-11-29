@@ -1,14 +1,8 @@
 @import "modules/slider";
-
-
-
 .page-container{
   height: 1024px;
-<<<<<<< HEAD
   width: 768px;
-=======
   width: 100%;
->>>>>>> 11b556a797c72e96de2a0f8296c8cf9052a21435
   position: relative;
 }
 #header{
@@ -29,22 +23,8 @@
     
   
   }
-<<<<<<< HEAD
-  label > input{ /* HIDE RADIO */
-  visibility: hidden; /* Makes input not-clickable */
-  position: absolute; /* Remove input from document flow */
-}
-label > input + img{ /* IMAGE STYLES */
-  cursor:pointer;
-  border:2px solid transparent;
-}
-label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
-  border:2px solid #fff;
-}
+
   #logo{
-=======
-  img {
->>>>>>> 11b556a797c72e96de2a0f8296c8cf9052a21435
     width: 100px;
     height: 70px;
     position: absolute;
@@ -64,17 +44,14 @@ label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
      height: 50px;
      background-color: #76b2b7;
      position: absolute;
-     top:970px;
-    
+     top:975px; 
   }
   .description {
     font-family: 'Amatic SC', cursive;
     font-size: 30px;
     position: absolute;
     top: 45%;
-    left: 38%
-<<<<<<< HEAD
-
+    left: 38%;
   }
   #box2{
     display: none;
@@ -87,25 +64,9 @@ label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
     display: none;
   }
 
-=======
-
-  }
-  #box2{
-    display: none;
-  }
-  #box3{
-    display: none;
-  }
-
-  #box4{
-    display: none;
-  }
-
->>>>>>> 11b556a797c72e96de2a0f8296c8cf9052a21435
   #box5{
     display: none;
   }
-
   #box6{
     display: none;
   }

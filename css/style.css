@@ -1,45 +1,212 @@
-/*
-Error: Invalid CSS after "  width: 768px": expected "{", was ";"
-        on line 8 of C:\Users\Kelsey Smith\Desktop\foundation-summative\sass\style.scss
+.slick-center .slide-h3 {
+  color: #FFF; }
 
-3: 
-4: 
-5: .page-container{
-6:   height: 1024px;
-7: <<<<<<< HEAD
-8:   width: 768px;
-9: =======
-10:   width: 100%;
-11: >>>>>>> 11b556a797c72e96de2a0f8296c8cf9052a21435
-12:   position: relative;
-13: }
+.slider {
+  width: 600px;
+  height: 150px;
+  margin: 20px auto;
+  text-align: center; }
 
-Backtrace:
-C:\Users\Kelsey Smith\Desktop\foundation-summative\sass\style.scss:8
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:1207:in `expected'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:1137:in `expected'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:1132:in `tok!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:665:in `block'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:735:in `declaration_or_ruleset'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:685:in `block_child'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:666:in `block'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:658:in `ruleset'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:684:in `block_child'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:125:in `stylesheet'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:41:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:406:in `_to_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:281:in `render'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:400:in `run'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/bin/sass:13:in `<top (required)>'
-C:/Program Files (x86)/Koala/bin/sass:18:in `load'
-C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"  width: 768px\": expected \"{\", was \";\"\A         on line 8 of C:\Users\Kelsey Smith\Desktop\foundation-summative\sass\style.scss\A \A 3: \A 4: \A 5: .page-container{\A 6:   height: 1024px;\A 7: <<<<<<< HEAD\A 8:   width: 768px;\A 9: =======\A 10:   width: 100%;\A 11: >>>>>>> 11b556a797c72e96de2a0f8296c8cf9052a21435\A 12:   position: relative;\A 13: }"; }
+.slide-h3 {
+  margin: 10% 0 10% 0;
+  padding: 40% 20%;
+  width: 150px;
+  height: 150px; }
+
+.imagePos {
+  margin-left: -33px;
+  margin-top: -33px;
+  width: 150px;
+  height: 150px; }
+
+.slider div {
+  margin-right: 5px; }
+
+.slick-slide {
+  opacity: .6;
+  width: 10px; }
+
+.slick-center {
+  display: block;
+  max-width: 10% !important;
+  max-height: 20% !important;
+  opacity: 1; }
+
+.slick-prev:before, .slick-next:before {
+  color: black;
+  line-height: 4; }
+
+.page-container {
+  height: 1024px;
+  width: 768px;
+  width: 100%;
+  position: relative; }
+
+#header {
+  width: 100%;
+  height: 100px;
+  background-color: #76b2b7;
+  position: relative; }
+
+h1 {
+  font-family: 'Amatic SC', cursive;
+  color: white;
+  position: absolute;
+  left: 38%;
+  bottom: -5%;
+  font-size: 60px;
+  font-weight: 400; }
+
+#logo {
+  width: 100px;
+  height: 70px;
+  position: absolute;
+  left: 5%;
+  top: 8%; }
+
+#logo-words {
+  font-family: 'Amatic SC', cursive;
+  color: white;
+  position: absolute;
+  bottom: -12%;
+  left: 5%; }
+
+#footer {
+  width: 100%;
+  height: 50px;
+  background-color: #76b2b7;
+  position: absolute;
+  top: 975px; }
+
+.description {
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
+  position: absolute;
+  top: 45%;
+  left: 38%; }
+
+#box2 {
+  display: none; }
+
+#box3 {
+  display: none; }
+
+#box4 {
+  display: none; }
+
+#box5 {
+  display: none; }
+
+#box6 {
+  display: none; }
+
+.form-container {
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  width: 80%;
+  height: 300px;
+  background-color: #76b2b7;
+  position: relative;
+  margin-left: 10%;
+  margin-top: 20%;
+  display: none; }
+
+#formTwo {
+  display: inherit; }
+
+h3 {
+  position: absolute;
+  left: 20%; }
+
+#about {
+  width: 80%;
+  margin: 0 auto;
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
+  text-align: center; }
+
+[type="radio"]:checked + label:after, [type="radio"].with-gap:checked + label:after {
+  background-color: white; }
+
+[type="radio"]:checked + label:after, [type="radio"].with-gap:checked + label:before, [type="radio"].with-gap:checked + label:after {
+  border: 2px solid white; }
+
+[type="radio"]:not(:checked) + label:before, [type="radio"]:not(:checked) + label:after {
+  border: 2px solid white; }
+
+[type="radio"]:not(:checked) + label, [type="radio"]:checked + label {
+  font-family: 'Amatic SC', cursive;
+  color: white;
+  font-size: 30px; }
+
+#one {
+  position: absolute;
+  top: 50px;
+  left: 50px; }
+
+#two {
+  position: absolute;
+  top: 50px;
+  left: 350px; }
+
+#three {
+  position: absolute;
+  top: 140px;
+  left: 50px; }
+
+#four {
+  position: absolute;
+  top: 140px;
+  left: 350px; }
+
+#pOne {
+  position: absolute;
+  top: 50px;
+  left: 50px; }
+
+#pTwo {
+  position: absolute;
+  top: 50px;
+  left: 350px; }
+
+#pThree {
+  position: absolute;
+  top: 100px;
+  left: 50px; }
+
+#pFour {
+  position: absolute;
+  top: 100px;
+  left: 350px; }
+
+#pFive {
+  position: absolute;
+  top: 150px;
+  left: 50px; }
+
+#pSix {
+  position: absolute;
+  top: 150px;
+  left: 350px; }
+
+.waves-effect {
+  position: absolute;
+  top: 240px;
+  right: 50px; }
+
+.btn-large {
+  border-radius: 10px;
+  background-color: #5CB85C;
+  width: 136px;
+  height: 48px;
+  font-size: 25px; }
+
+.btn-large:hover {
+  background-color: #5CB85C; }
+
+.previous {
+  left: 50px; }
+
+/*# sourceMappingURL=style.css.map */
