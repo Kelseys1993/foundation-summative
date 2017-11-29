@@ -1,0 +1,229 @@
+@import "modules/slider";
+
+
+
+.page-container{
+  height: 1024px;
+<<<<<<< HEAD
+  width: 768px;
+=======
+  width: 100%;
+>>>>>>> 11b556a797c72e96de2a0f8296c8cf9052a21435
+  position: relative;
+}
+#header{
+    width: 100%;
+    height: 100px;
+    background-color: #76b2b7;
+    position: relative;
+
+  }
+  h1 {
+    font-family: 'Amatic SC', cursive;
+    color: white;
+    position: absolute;
+    left:38%;
+    bottom: -5%;
+    font-size: 60px;
+    font-weight: 400;
+    
+  
+  }
+<<<<<<< HEAD
+  label > input{ /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+label > input + img{ /* IMAGE STYLES */
+  cursor:pointer;
+  border:2px solid transparent;
+}
+label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  border:2px solid #fff;
+}
+  #logo{
+=======
+  img {
+>>>>>>> 11b556a797c72e96de2a0f8296c8cf9052a21435
+    width: 100px;
+    height: 70px;
+    position: absolute;
+    left:5%;
+    top:8%;
+  }
+  #logo-words{
+    font-family: 'Amatic SC', cursive;
+    color: white;
+    position: absolute;
+    bottom: -12%;
+    left:5%;
+  
+  }
+  #footer{
+     width: 100%;
+     height: 50px;
+     background-color: #76b2b7;
+     position: absolute;
+     top:970px;
+    
+  }
+  .description {
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    position: absolute;
+    top: 45%;
+    left: 38%
+<<<<<<< HEAD
+
+  }
+  #box2{
+    display: none;
+  }
+  #box3{
+    display: none;
+  }
+
+  #box4{
+    display: none;
+  }
+
+=======
+
+  }
+  #box2{
+    display: none;
+  }
+  #box3{
+    display: none;
+  }
+
+  #box4{
+    display: none;
+  }
+
+>>>>>>> 11b556a797c72e96de2a0f8296c8cf9052a21435
+  #box5{
+    display: none;
+  }
+
+  #box6{
+    display: none;
+  }
+  .form-container {
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    color:white;
+    text-align: center;
+    width: 80%;
+    height: 300px;
+    background-color: #76b2b7;
+    position: relative;
+    margin-left: 10%;  
+    margin-top: 20%; 
+    display: none;
+
+  }
+  #formTwo{
+    display: inherit;
+  }
+ h3{
+  position: absolute;
+  left:20%;
+    }
+  #about{
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    text-align: center;
+
+  }
+
+  [type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:after {
+    background-color: white;
+  }
+
+  [type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:before, [type="radio"].with-gap:checked+label:after {
+    border: 2px solid white;
+  }
+  [type="radio"]:not(:checked)+label:before, [type="radio"]:not(:checked)+label:after {
+    border: 2px solid white;
+  }
+  [type="radio"]:not(:checked)+label, [type="radio"]:checked+label {
+  font-family: 'Amatic SC', cursive;
+  color: white;
+  font-size: 30px;
+
+  }
+
+  #one {
+  position: absolute;
+  top: 50px;
+  left:50px;
+  }
+   #two {
+  position: absolute;
+  top: 50px;
+  left: 350px
+  }
+   #three {
+  position: absolute;
+  top: 140px;
+  left:50px;
+  }
+   #four {
+  position: absolute;
+  top: 140px;
+  left:350px;
+  }
+  //second form
+    #pOne {
+  position: absolute;
+  top: 50px;
+  left:50px;
+  }
+   #pTwo {
+  position: absolute;
+  top: 50px;
+  left: 350px
+  }
+   #pThree {
+  position: absolute;
+  top: 100px;
+  left:50px;
+  }
+   #pFour {
+  position: absolute;
+  top: 100px;
+  left:350px;
+  }
+  #pFive{
+  position: absolute;
+  top: 150px;
+  left:50px;
+  }
+  #pSix{
+    position: absolute;
+   top: 150px;
+  left: 350px
+  }
+  .waves-effect{
+    position: absolute;
+    top:240px;
+    right:50px;
+
+  }
+   .btn-large{
+      
+      border-radius: 10px;
+      background-color: #5CB85C;
+      width: 136px;
+      height: 48px;
+      font-size: 25px;
+    }
+    .btn-large:hover{
+      background-color:  #5CB85C
+    }
+    .previous{
+      left:50px;
+    }

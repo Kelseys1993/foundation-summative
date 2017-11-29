@@ -1,0 +1,66 @@
+.slick-center .slide-h3 {
+  color: #FFF;
+}
+
+.slider {
+  width:600px;
+  height: 150px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.slide-h3 {
+  margin: 10% 0 10% 0;
+<<<<<<< HEAD
+  padding:20%;
+  width: 150px;
+  height: 150px;
+  
+}
+.imagePos{
+  margin-left: -33px;
+  margin-top: -33px;
+  
+=======
+  padding: 40% 20%;
+  background: blue;
+  width: 150px;
+  height: 150px;
+}
+#imageOne {
+  background-image: url('../img/zorbing.jpg');
+>>>>>>> 11b556a797c72e96de2a0f8296c8cf9052a21435
+}
+
+.slider div {
+  margin-right: 5px;
+}
+
+.slick-slide {
+<<<<<<< HEAD
+  opacity: .3;
+
+=======
+  opacity: .6;
+  width:10px;
+>>>>>>> 11b556a797c72e96de2a0f8296c8cf9052a21435
+}
+
+.slick-center {
+  display: block;
+  max-width: 10% !important;
+  max-height: 20% !important;
+  opacity: 1;
+<<<<<<< HEAD
+
+}
+.slick-prev:before, .slick-next:before{
+  color: black;
+  line-height: 3;
+=======
+}
+.slick-prev:before, .slick-next:before{
+  color: black;
+  line-height: 4;
+>>>>>>> 11b556a797c72e96de2a0f8296c8cf9052a21435
+}
