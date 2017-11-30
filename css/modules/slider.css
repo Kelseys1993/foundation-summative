@@ -4,8 +4,9 @@
 .slider {
   width: 600px;
   height: 150px;
-  margin: 20px auto;
-  text-align: center; }
+  margin: 0 auto;
+  text-align: center;
+  margin-top: -40px; }
 
 .slide-h3 {
   margin: 10% 0 10% 0;
@@ -23,7 +24,7 @@
   margin-right: 5px; }
 
 .slick-slide {
-  opacity: .6;
+  opacity: .4;
   width: 10px; }
 
 .slick-center {
@@ -35,5 +36,3 @@
 .slick-prev:before, .slick-next:before {
   color: black;
   line-height: 4; }
-
-/*# sourceMappingURL=slider.css.map */

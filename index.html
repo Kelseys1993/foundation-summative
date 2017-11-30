@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Roadtrippers</title>
+
   <!-- main font style -->
 	<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
  <!--  slick slider style sheets -->
@@ -28,8 +30,7 @@
     </div>
 
     <div id='about'>
-      <p>
-      Choose one of four starting locations to begin a road trip to one of six locations around the north island of New Zealand. Each location is either an adventure activity or a scenic location</p>
+      <p>Choose one of four starting locations to begin a road trip to one of six locations around the north island of New Zealand. Each location is either an adventure activity or a scenic location</p>
     </div>
 
    
@@ -113,7 +114,7 @@
       <label for="location4">Napier</label>
     </p>
 
-<a class="waves-effect waves-light btn-large">Button</a>
+<a class="waves-effect waves-light btn-large">Next</a>
   </div>
 </form>
 </div>
@@ -156,6 +157,109 @@
 </form>
 </div>
 
+<div class='form-container' id='formThree'>
+
+  <form action="demo-form">
+  <div class='form-section'>
+    <h3 id="travel"> Number of days traveling</h3>
+    <div id="input_div">
+      <input type="button" value="-" id="minus">
+    <input type="text" size="15" value="0" id="count"> <input type="button" value="+" id="plus">
+    </div>
+
+     <h3 id="passengers"> Number of Passengers</h3>
+    <label>
+      <input type="radio" name="one" value="one"/>
+      <img src="img/one.png" id='valueOne'>
+  </label>
+  <label>
+      <input type="radio" name="one" value="two"/>
+      <img src="img/two.png" id='valueTwo'>
+  </label>
+   <label>
+      <input type="radio" name="one" value="three"/>
+      <img src="img/three.png" id='valueThree'>
+  </label>
+   <label>
+      <input type="radio" name="one" value="four"/>
+      <img src="img/four.png" id='valueFour'>
+  </label>
+   <label>
+      <input type="radio" name="one" value="five"/>
+      <img src="img/five.png" id='valueFive'>
+  </label>
+   <label>
+      <input type="radio" name="one" value="six"/>
+      <img src="img/six.png" id='valueSix'>
+  </label>
+<a class="waves-effect waves-light btn-large">Next</a>
+  <a class="waves-effect waves-light btn-large previous">Previous</a>
+  </div>
+</form>
+</div>
+
+<div class='form-container' id='formFour'>
+  <div class='form-section'>
+   <h3 id="vehicle"> Choose a vehicle</h3>
+    <div id='vehicleOne'>
+      <img src='img/motobike.png' class='modal-trigger' href="#modal1">
+    </div>
+    <div id='vehicleTwo'>
+      <img src='img/small-car.png' class='modal-trigger' href="#modal1">
+    </div>
+      <div id='vehicleThree'>
+      <img src='img/large-car.png' class='modal-trigger' href="#modal1">
+    </div>
+      <div id='vehicleFour'>
+      <img src='img/motorhome.png' class='modal-trigger' href="#modal1">
+      
+    </div>
+
+  <a class="waves-effect waves-light btn-large previous">Previous</a>
+  </div>
+</div>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">X</a>
+      <h4>BMW R1200GS</h4>
+      <div>
+        <img src='img/motobike.png' alt='motorbike' id='modalimage1'>
+        <div> 
+          <div id='trip-cost'>
+            <p>Trip Cost</p>          
+          </div>
+          <div id='distance' class='style'>
+            <p>Distance </p>
+          </div>
+          <div id='people' class='style'>
+            <p>people </p>
+          </div>
+          <div id='days' class='style'>
+            <p>  Days</p>
+          </div>
+          <div id='rental' class='style'>
+            <p> Rental price</p>
+          </div>
+          <div id='fuel' class='style'>
+            <p> Fuel Cost</p>
+          </div>
+          <div id='total' class='style'>
+            <p> Total Cost</p>
+          </div>
+        
+
+      </div>
+      
+    </div>
+    <div class="modal-footer">
+      <a class="waves-effect waves-light btn-large" id="modal-button">Book</a>
+  <a class="waves-effect waves-light btn-large previous" id='modal-button2'>New Trip</a>
+    </div>
+  </div>
+  </div>
+
 <div id='footer'> 
 </div>
 
@@ -164,6 +268,8 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/slick/slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src='js/plugins.js'></script>
 	<script src='js/custom.js'></script>
 	
 </body>
