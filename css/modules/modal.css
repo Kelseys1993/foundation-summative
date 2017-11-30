@@ -1,0 +1,37 @@
+.modal-content {
+  width: 500px; }
+
+.open {
+  width: 500px; }
+
+.modal-action {
+  margin-top: -220px;
+  margin-right: -20px;
+  font-family: sans-serif; }
+
+#modalimage1 {
+  width: 300px;
+  height: 160px;
+  margin-left: 20%; }
+
+#trip-cost > p {
+  text-align: center;
+  background-color: #76b2b7;
+  font-size: 30px;
+  color: white;
+  margin-bottom: 0px; }
+
+.style {
+  border: 1px solid black;
+  font-size: 25px; }
+
+.style > p {
+  margin-left: 10px; }
+
+#modal-button {
+  margin-top: 60%; }
+
+#modal-button2 {
+  margin-top: 60%; }
+
+/*# sourceMappingURL=modal.css.map */

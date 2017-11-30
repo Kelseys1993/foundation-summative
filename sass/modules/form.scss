@@ -9,7 +9,6 @@
     position: relative;
     margin-left: 10%;  
     margin-top: 15%; 
-    display: none;
     
 
   }
@@ -220,7 +219,7 @@
     //fourth form
 
     #formFour{
-      display: inherit;
+      display: none;
     }
     #vehicle{
       left:35%
