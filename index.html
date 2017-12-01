@@ -39,59 +39,45 @@
 
     <div class="slide-h3" >
       <img src='img/zorbing.jpg' alt='zorbing' class='imagePos'>
+      <p> Zorbing in Rotorua</p>
       
     </div>
   </div>
   <div>
       <div class="slide-h3" >
         <img src='img/huka-falls.jpg' alt='huka falls' class='imagePos'>
+         <p> Huka Falls Taupo</p>
     </div>
   </div>
   <div>
    <div class="slide-h3" >
     <img src='img/hobbiton.jpg' alt='hobbiton' class='imagePos'>
+     <p> Hobbiton Matamata</p>
     </div>
   </div>
   <div>
     <div class="slide-h3" >
       <img src='img/dolphin.jpg' alt='dolphins' class='imagePos'>
+       <p>Dolphin swim Tauranga </p>
     </div>
   </div>
   <div>
      <div class="slide-h3">
       <img src='img/castlepoint.jpg' alt='castlepoint' class='imagePos'>
+       <p>Castlepoint Walks </p>
     </div>
   </div>
    <div>
      <div class="slide-h3" >
       <img src='img/waitomo.jpg' alt='waitomo cave' class='imagePos'>
+       <p> Glowworms Waitomo</p>
 
     </div>
   </div>
-  
 
 </div> <!-- slider container ends -->
 
-    <div class='description' id='box1'>
-      <p> Zorbing in Rotorua </p>
-    </div>
-    <div class='description' id='box2'>
-
-      <p> Huka Falls in Taupo </p>
-    </div>
-    <div class='description' id='box3'>
-      <p> Hobbiton in Matamata</p>
-    </div>
-    <div class='description' id='box4'>
-      <p> Dolphin swim in Tauranga</p>
-    </div>
-    <div class='description' id='box5'>
-      <p> Castlepoint Walks</p>
-    </div>
-    <div class='description' id='box6'>
-      <p> Glow worm caves in Waitomo </p>
-    </div>
-
+<!-- form one begins   -->
 <div class='form-container' id='formOne'>
 
   <form id="demo-form">
@@ -118,12 +104,14 @@
   </div>
 </form>
 </div>
+ <!-- form one ends -->
 
+<!-- form two starts -->
 <div class='form-container' id='formTwo'>
 
   <form action="demo-form">
   <div class='form-section'>
-    <h3> Choose your Activity location</h3>
+    <h3> Choose your activity location</h3>
     <p id='pOne'>
 
       <input class="with-gap" name="group2" type="radio" id="location5"/>
@@ -156,7 +144,9 @@
   </div>
 </form>
 </div>
+<!-- form two ends -->
 
+<!-- form three starts -->
 <div class='form-container' id='formThree'>
 
   <form action="demo-form">
@@ -164,40 +154,42 @@
     <h3 id="travel"> Number of days traveling</h3>
     <div id="input_div">
       <input type="button" value="-" id="minus">
-    <input type="text" size="15" value="0" id="count"> <input type="button" value="+" id="plus">
+    <input type="text" placeholder='0' size="15" value="" id="count"> <input type="button" value="+" id="plus">
     </div>
 
      <h3 id="passengers"> Number of Passengers</h3>
     <label>
-      <input type="radio" name="one" value="one"/>
+      <input type="radio" name="one" value="one" class='radios'/>
       <img src="img/one.png" id='valueOne'>
   </label>
   <label>
-      <input type="radio" name="one" value="two"/>
+      <input type="radio" name="one" value="two" class='radios'/>
       <img src="img/two.png" id='valueTwo'>
   </label>
    <label>
-      <input type="radio" name="one" value="three"/>
+      <input type="radio" name="one" value="three" class='radios'/>
       <img src="img/three.png" id='valueThree'>
   </label>
    <label>
-      <input type="radio" name="one" value="four"/>
+      <input type="radio" name="one" value="four" class='radios'/>
       <img src="img/four.png" id='valueFour'>
   </label>
    <label>
-      <input type="radio" name="one" value="five"/>
+      <input type="radio" name="one" value="five" class='radios'/>
       <img src="img/five.png" id='valueFive'>
   </label>
    <label>
-      <input type="radio" name="one" value="six"/>
+      <input type="radio" name="one" value="six" class='radios'/>
       <img src="img/six.png" id='valueSix'>
   </label>
-<a class="waves-effect waves-light btn-large">Next</a>
-  <a class="waves-effect waves-light btn-large previous">Previous</a>
+<a class="waves-effect waves-light btn-large" id='thirdBtn'>Next</a>
+  <a class="waves-effect waves-light btn-large previous" id='prevTwo'>Previous</a>
   </div>
 </form>
 </div>
+<!-- form three ends -->
 
+<!-- form four starts -->
 <div class='form-container' id='formFour'>
   <div class='form-section'>
    <h3 id="vehicle"> Choose a vehicle</h3>
@@ -215,11 +207,12 @@
       
     </div>
 
-  <a class="waves-effect waves-light btn-large previous">Previous</a>
+  <a class="waves-effect waves-light btn-large previous" id='prevThree'>Previous</a>
   </div>
 </div>
+<!-- form four ends -->
 
-  <!-- Modal Structure -->
+  <!-- Modal Starts -->
   <div id="modal1" class="modal">
     <div class="modal-content">
       <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">X</a>
@@ -248,17 +241,15 @@
           <div id='total' class='style'>
             <p> Total Cost</p>
           </div>
-        
-
       </div>
-      
     </div>
     <div class="modal-footer">
-      <a class="waves-effect waves-light btn-large" id="modal-button">Book</a>
-  <a class="waves-effect waves-light btn-large previous" id='modal-button2'>New Trip</a>
+      <a href='http://www.tourismnewzealand.com' class="waves-effect waves-light btn-large" id="modal-button">Book</a>
+  <a class="waves-effect waves-light btn-large previous" id='modal-button2' >New Trip</a>
     </div>
   </div>
   </div>
+<!--   modal ends -->
 
 <div id='footer'> 
 </div>

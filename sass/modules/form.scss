@@ -9,86 +9,85 @@
     position: relative;
     margin-left: 10%;  
     margin-top: 15%; 
-    
-
-  }
-  #formTwo{
-    display: none;
   }
  
  h3{
-  position: absolute;
-  left:25%;
+    position: absolute;
+    left:25%;
     }
   
 
-  [type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:after {
+ [type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:after {
     background-color: white;
   }
 
-  [type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:before, [type="radio"].with-gap:checked+label:after {
+ [type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:before, [type="radio"].with-gap:checked+label:after {
     border: 2px solid white;
   }
-  [type="radio"]:not(:checked)+label:before, [type="radio"]:not(:checked)+label:after {
+ [type="radio"]:not(:checked)+label:before, [type="radio"]:not(:checked)+label:after {
     border: 2px solid white;
   }
-  [type="radio"]:not(:checked)+label, [type="radio"]:checked+label {
-  font-family: 'Amatic SC', cursive;
-  color: white;
-  font-size: 30px;
+ [type="radio"]:not(:checked)+label, [type="radio"]:checked+label {
+    font-family: 'Amatic SC', cursive;
+    color: white;
+    font-size: 30px;
 
   }
 
   #one {
-  position: absolute;
-  top: 80px;
-  left:100px;
+    position: absolute;
+    top: 80px;
+    left:100px;
   }
    #two {
-  position: absolute;
-  top: 80px;
-  left: 400px
+    position: absolute;
+    top: 80px;
+    left: 380px
   }
    #three {
-  position: absolute;
-  top: 170px;
-  left:100px;
+    position: absolute;
+    top: 170px;
+    left:100px;
   }
    #four {
-  position: absolute;
-  top: 170px;
-  left:400px;
+    position: absolute;
+    top: 170px;
+    left:380px;
   }
   //second form
+   #formTwo{
+    display: none;
+
+  }
     #pOne {
-  position: absolute;
-  top: 50px;
-  left:100px;
+    position: absolute;
+    top: 50px;
+    left:100px;
   }
    #pTwo {
-  position: absolute;
-  top: 50px;
-  left:400px
+    position: absolute;
+    top: 50px;
+    left:400px
   }
    #pThree {
-  position: absolute;
-  top: 120px;
-  left:100px;
+    position: absolute;
+    top: 120px;
+    left:100px;
   }
    #pFour {
-  position: absolute;
-  top: 120px;
-  left:400px;
+    position: absolute;
+    top: 120px;
+    left:400px;
   }
   #pFive{
-  position: absolute;
-  top: 190px;
-  left:100px;
+    position: absolute;
+    top: 190px;
+    left:100px;
   }
   #pSix{
     position: absolute;
-   top: 190px;
-  left: 400px
+    top: 190px;
+    left: 400px
   }
   .waves-effect{
     position: absolute;
@@ -96,43 +95,43 @@
     right:50px;
 
   }
-   .btn-large{
-      position: absolute;
-      top:80%;
-      border-radius: 10px;
-      background-color: #5CB85C;
-      width: 136px;
-      height: 48px;
-      font-size: 25px;
+  .btn-large{
+    position: absolute;
+    top:80%;
+    border-radius: 10px;
+    background-color: #5CB85C;
+    width: 136px;
+    height: 48px;
+    font-size: 25px;
     }
-    .btn-large:hover{
+  .btn-large:hover{
       background-color:  #5CB85C
-    }
-    .previous{
-      left:50px;
-    }
-    // third form
-     #formThree{
-    display:none;
   }
-    #travel{
+  .previous{
+      left:50px;
+  }
+    // third form
+  #formThree{
+      display:none;
+  }
+  #travel{
       font-size: 30px;
       left: 32%;
     }
-    #passengers{
+  #passengers{
       font-size: 30px;
       top:130px;
       left:35%
     }
 
-    #count{
+  #count{
       width:20px;
       position: absolute;
       top:80px;
       font-size: 30px;
     }
 
-    #plus {
+  #plus {
       position: absolute;
       top:80px;
       right:200px;
@@ -143,143 +142,141 @@
       height:50px;
 
     }
-
-    
-    #minus{
+  #minus{
       position: absolute;
       top:80px;
       left:200px;
       background-color: white;
       border: white;
       color:black;
-     width:50px;
+      width:50px;
       height:50px;
     }
-    #valueOne{
-      width: 60px;
-      height: 60px;
-      position: absolute;
-      top:205px;
-      left:30px;
+  #valueOne{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top:205px;
+    left:30px;
 
-    }
-      #valueTwo{
-      width: 60px;
-      height: 60px;
-      position: absolute;
-      top:205px;
-      left:130px;
+  }
+    #valueTwo{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top:205px;
+    left:130px;
 
-    }
-      #valueThree{
-      width: 60px;
-      height: 60px;
-      position: absolute;
-      top:205px;
-      left:230px;
+  }
+    #valueThree{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top:205px;
+    left:230px;
 
-    }
-      #valueFour{
-      width: 60px;
-      height: 60px;
-      position: absolute;
-      top:205px;
-      right:230px;
+  }
+    #valueFour{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top:205px;
+    right:230px;
 
-    }
-      #valueFive{
-      width: 60px;
-      height: 60px;
-      position: absolute;
-      top:205px;
-      right:130px;
+  }
+    #valueFive{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top:205px;
+    right:130px;
 
-    }
-      #valueSix{
-     width: 60px;
-      height: 60px;
-      position: absolute;
-      top:205px;
-      right:30px;
+  }
+    #valueSix{
+   width: 60px;
+    height: 60px;
+    position: absolute;
+    top:205px;
+    right:30px;
 
-    }
-    label > input{ /* HIDE RADIO */
-      visibility: hidden; /* Makes input not-clickable */
-      position: absolute; /* Remove input from document flow */
-    }
-    label > input + img{ /* IMAGE STYLES */
-      cursor:pointer;
-      border:2px solid transparent;
-    }
-    label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
-      border:2px solid #fff;
-      border-radius: 100px;
-    }
+  }
+  label > input{ /* HIDE RADIO */
+    visibility: hidden; /* Makes input not-clickable */
+    position: absolute; /* Remove input from document flow */
+  }
+  label > input + img{ /* IMAGE STYLES */
+    cursor:pointer;
+    border:2px solid transparent;
+  }
+  label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+    border:2px solid #fff;
+    border-radius: 100px;
+  }
 
-    //fourth form
+  //fourth form
 
-    #formFour{
-      display: none;
-    }
-    #vehicle{
-      left:35%
-    }
-    #vehicleOne{
-      position: absolute;
-      top:35%;
-      left:5%;
-      background-color: white;
-      border-radius: 20px;
-      width:155px;
-      height: 105px;
-      
-    }
-    #vehicleTwo{
-      position: absolute;
-      top:35%;
-      left:32.8%;
-      background-color: white;
-      border-radius: 20px;
-      width:185px;
-      height: 105px;
-      
-    }
-      #vehicleThree{
-      position: absolute;
-      top:35%;
-      left:65%;
-      background-color: white;
-      border-radius: 20px;
-      width:185px;
-      height: 105px;
-      
-    }  #vehicleFour{
-      position: absolute;
-      top:35%;
-      left:65%;
-      background-color: white;
-      border-radius: 20px;
-      width:185px;
-      height: 105px;
-      display: none;
-      
-    }
-    #vehicleOne > img{
-      width:150px;
-      height: 100px;
-    }
-     #vehicleTwo > img{
-      width:180px;
-      height:100px;
-    }
-     #vehicleThree > img{
-      width:160px;
-      height:100px;
-    }
-     #vehicleFour > img{
-      width:180px;
-      height:100px;
-    }
-
-
+  #formFour{
+    display: none;
+  }
+  #vehicle{
+    left:35%
+  }
+  #vehicleOne{
+    position: absolute;
+    top:35%;
+    left:5%;
+    background-color: white;
+    border-radius: 20px;
+    width:155px;
+    height: 105px;
     
+  }
+  #vehicleTwo{
+    position: absolute;
+    top:35%;
+    left:32.8%;
+    background-color: white;
+    border-radius: 20px;
+    width:185px;
+    height: 105px;
+    
+  }
+    #vehicleThree{
+    position: absolute;
+    top:35%;
+    left:65%;
+    background-color: white;
+    border-radius: 20px;
+    width:185px;
+    height: 105px;
+    
+  }  #vehicleFour{
+    position: absolute;
+    top:35%;
+    left:65%;
+    background-color: white;
+    border-radius: 20px;
+    width:185px;
+    height: 105px;
+    display: none;
+    
+  }
+  #vehicleOne > img{
+    width:150px;
+    height: 100px;
+  }
+   #vehicleTwo > img{
+    width:180px;
+    height:100px;
+  }
+   #vehicleThree > img{
+    width:160px;
+    height:100px;
+  }
+   #vehicleFour > img{
+    width:180px;
+    height:100px;
+  }
+
+
+  

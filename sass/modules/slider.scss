@@ -17,6 +17,16 @@
   width: 150px;
   height: 150px;
 }
+.slide-h3 > p{
+  color: black;
+  font-size: 25px;
+  margin-left: -64px;
+  margin-top: -2px;  
+
+}
+*, *:before, *:after{
+  box-sizing: content-box;
+}
 .imagePos{
   margin-left: -33px;
   margin-top: -33px;

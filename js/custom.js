@@ -10,13 +10,21 @@ var count = 0;
 var countEl = document.getElementById("count");
 var add = document.getElementById('plus');
 var sub = document.getElementById('minus');
-var next = document.getElementById('firstBtn');
-var prev1 = document.getElementById('prevOne');
-prev1.addEventListener('click', prevDiv, false);
-next.addEventListener('click', nextDiv, false);
+var btn = document.getElementsByClassName('btn-large');
+var close = document.getElementById('modal-button2');
+init();
+
+function init(){ 
+btn[2].addEventListener('click', prevDiv, false);
+btn[0].addEventListener('click', nextDiv, false);
+btn[4].addEventListener('click', prevDiv2, false);
+btn[1].addEventListener('click', nextDiv2, false);
+btn[5].addEventListener('click', prevDiv3, false);
+btn[3].addEventListener('click', nextDiv3, false);
 sub.addEventListener('click', minus, false);
 add.addEventListener('click', plus, false);
-
+close.addEventListener('click', startAgain, false);
+}
 function plus(){
    if (count < 15) {
     count++;
@@ -31,20 +39,45 @@ function minus(){
 }
 function nextDiv(){
   if($('input:radio:checked').length > 0){
-$('#formOne').fadeOut(800,function(){
-  $('#formTwo').fadeIn(800);
-});
-}else{
- 
+document.getElementById('formOne').style.display = 'none';
+document.getElementById('formTwo').style.display = 'block';
 }
 }
 function prevDiv(){
-  $('#formTwo').fadeOut(800,function(){
-  $('#formOne').fadeIn(800);
-});
+document.getElementById('formTwo').style.display = 'none';
+document.getElementById('formOne').style.display = 'block';
+
 }
-console.dir(next)
-console.log($('#demo-form').val);
+function nextDiv2(){
+  if($('input:radio:checked').length > 1){
+document.getElementById('formTwo').style.display = 'none';
+document.getElementById('formThree').style.display = 'block';
+}
+}
+function prevDiv2(){
+document.getElementById('formThree').style.display = 'none';
+document.getElementById('formTwo').style.display = 'block';
+
+}
+function nextDiv3(){
+  if($('.radios').is(':checked') && $('#count').val().length > 0){
+document.getElementById('formThree').style.display = 'none';
+document.getElementById('formFour').style.display = 'block';
+}
+}
+function prevDiv3(){
+document.getElementById('formFour').style.display = 'none';
+document.getElementById('formThree').style.display = 'block';
+
+}
+
+function startAgain(){
+  setTimeout(function(){
+  window.location.reload();
+},500);
+
+}
+
 
 
 })()//iife ends ******
