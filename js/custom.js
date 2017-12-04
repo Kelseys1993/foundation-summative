@@ -12,6 +12,7 @@ var add = document.getElementById('plus');
 var sub = document.getElementById('minus');
 var btn = document.getElementsByClassName('btn-large');
 var close = document.getElementById('modal-button2');
+var home = document.getElementById('logo');
 init();
 
 function init(){ 
@@ -21,9 +22,13 @@ btn[4].addEventListener('click', prevDiv2, false);
 btn[1].addEventListener('click', nextDiv2, false);
 btn[5].addEventListener('click', prevDiv3, false);
 btn[3].addEventListener('click', nextDiv3, false);
+
+btn[3].addEventListener('click', getFormData, false);
+
 sub.addEventListener('click', minus, false);
 add.addEventListener('click', plus, false);
 close.addEventListener('click', startAgain, false);
+home.addEventListener('click', startAgain, false);
 }
 function plus(){
    if (count < 15) {
@@ -77,7 +82,37 @@ function startAgain(){
 },500);
 
 }
+console.log(dataArray);
 
+
+
+
+  //This is click event for the form
+  function getFormData(){
+      // This stops the submit button from sending you to another page
+    var values;
+      // this accesses the property of the form in the document object
+      var oForm = document.forms[0]
+      // this accessed the elements of the form property
+      var els = oForm.elements;
+      // this function loops through the elements on the form
+      // and pushes them into the empty array. the variable values is
+      // then set to equal that array
+      function loopEls(elements){
+          //An empty array to push the values into
+          var valuesNew = [];
+          // loops through the form elements and gets their values
+          for (var i = 0; i < elements.length; i++) {
+              valuesNew.push(elements[i].value);
+          };
+          
+          values = valuesNew;
+          return valuesNew; 
+       
+    }
+
+  console.log(values);
+  }
 
 
 })()//iife ends ******

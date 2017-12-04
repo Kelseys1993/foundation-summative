@@ -1,12 +1,14 @@
 @import "modules/slider";
 @import "modules/form";
 @import "modules/modal";
+
 body{
   font-family:'Amatic SC', cursive;
+  width: 786px;
 }
 .page-container{
   height: 100%;
-  width: 100%;
+  width: 786px;
   position: relative;
 }
 #header{
@@ -85,4 +87,5 @@ body{
   #box6{
     display: none;
   }
+ 
 
