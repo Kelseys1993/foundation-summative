@@ -98,7 +98,7 @@ h3 {
   font-size: 25px; }
 
 .btn-large:hover {
-  background-color: #5cb85c; }
+  background-color: #5CB85C; }
 
 .previous {
   left: 50px; }
@@ -108,17 +108,17 @@ h3 {
 
 #travel {
   font-size: 30px;
-  left: 32%; }
+  left: 32%;
+  top: 130px; }
 
 #passengers {
   font-size: 30px;
-  top: 130px;
   left: 35%; }
 
 #count {
   width: 20px;
   position: absolute;
-  top: 80px;
+  top: 205px;
   font-size: 30px; }
 
 ::-webkit-input-placeholder {
@@ -126,7 +126,7 @@ h3 {
 
 #plus {
   position: absolute;
-  top: 80px;
+  top: 205px;
   right: 200px;
   background-color: white;
   color: black;
@@ -136,7 +136,7 @@ h3 {
 
 #minus {
   position: absolute;
-  top: 80px;
+  top: 205px;
   left: 200px;
   background-color: white;
   border: white;
@@ -148,42 +148,42 @@ h3 {
   width: 60px;
   height: 60px;
   position: absolute;
-  top: 205px;
+  top: 70px;
   left: 30px; }
 
 #valueTwo {
   width: 60px;
   height: 60px;
   position: absolute;
-  top: 205px;
+  top: 70px;
   left: 130px; }
 
 #valueThree {
   width: 60px;
   height: 60px;
   position: absolute;
-  top: 205px;
+  top: 70px;
   left: 230px; }
 
 #valueFour {
   width: 60px;
   height: 60px;
   position: absolute;
-  top: 205px;
+  top: 70px;
   right: 230px; }
 
 #valueFive {
   width: 60px;
   height: 60px;
   position: absolute;
-  top: 205px;
+  top: 70px;
   right: 130px; }
 
 #valueSix {
   width: 60px;
   height: 60px;
   position: absolute;
-  top: 205px;
+  top: 70px;
   right: 30px; }
 
 label > input {
@@ -264,3 +264,5 @@ label > input:checked + img {
 #vehicleFour > img {
   width: 180px;
   height: 100px; }
+
+/*# sourceMappingURL=form.css.map */
