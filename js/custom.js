@@ -13,7 +13,9 @@ var sub = document.getElementById('minus');
 var btn = document.getElementsByClassName('btn-large');
 var close = document.getElementById('modal-button2');
 var home = document.getElementById('logo');
- var radioValues = [];
+var rdValue; 
+var radioValues = [];
+var valu = [];
 init();
 
 function init(){ 
@@ -23,10 +25,9 @@ btn[4].addEventListener('click', prevDiv2, false);
 btn[1].addEventListener('click', nextDiv2, false);
 btn[5].addEventListener('click', prevDiv3, false);
 btn[3].addEventListener('click', nextDiv3, false);
-
-btn[3].addEventListener('click', getFormData, false);
-btn[0].addEventListener('click',  getRadioValue, false );
-btn[1].addEventListener('click',  getRadioValue2, false );
+btn[3].addEventListener('click',  getRadioValue, false );
+btn[3].addEventListener('click',  getRadioValue2, false );
+btn[3].addEventListener('click',  getRadioValue3, false );
 sub.addEventListener('click', minus, false);
 add.addEventListener('click', plus, false);
 close.addEventListener('click', startAgain, false);
@@ -86,11 +87,12 @@ function startAgain(){
 
 }
 console.log(dataArray);
+console.log(dataArray2);
 
      function getRadioValue() {
-       
+            // group1 radio values
             var radios = theForm.elements['group1'];
-            var rdValue; 
+            
             for (var i=0; i<radios.length; i++) {
                 var someRadio = radios[i];
                 if (someRadio.checked) {
@@ -111,16 +113,14 @@ console.log(dataArray);
             } else if ( rdValue == 'Napier'){
                radioValues.push(rdValue);
             console.log(radioValues)
-            } else if(rdValue == 'noRadioChecked'){
-                alert('Start location needed to proceed');
             } else {
               console.log('break');
             }
-        }
-   function getRadioValue2() {
-       
+          }
+    function getRadioValue2() {
+            // group2 radio values
             var radios = theForm.elements['group2'];
-            var rdValue; 
+           
             for (var i=0; i<radios.length; i++) {
                 var someRadio = radios[i];
                 if (someRadio.checked) {
@@ -147,39 +147,67 @@ console.log(dataArray);
             }else if ( rdValue == 'castlepoint'){
                radioValues.push(rdValue);
             console.log(radioValues)
-            } else if(rdValue == 'noRadioChecked'){
-                alert('Start location needed to proceed');
             } else {
               console.log('break');
             }
+          }
+
+
+          function getRadioValue3() {
+            //group3 radio values
+            var radios = theForm.elements['group3'];
+          
+            for (var i=0; i<radios.length; i++) {
+                var someRadio = radios[i];
+                if (someRadio.checked) {
+                    rdValue = someRadio.value;
+                    break;
+                }
+                else rdValue = 'noRadioChecked';
+            }
+            if (rdValue == 'one') {
+              radioValues.push(rdValue);
+              console.log(radioValues)
+            } else if( rdValue == 'two'){
+               radioValues.push(rdValue);
+              console.log(radioValues)
+            } else if ( rdValue == 'three'){
+               radioValues.push(rdValue);
+            console.log(radioValues)
+            } else if ( rdValue == 'four'){
+               radioValues.push(rdValue);
+            console.log(radioValues)
+            } else if ( rdValue == 'five'){
+               radioValues.push(rdValue);
+            console.log(radioValues)
+            }else if ( rdValue == 'six'){
+               radioValues.push(rdValue);
+            console.log(radioValues)
+            } else {
+              console.log('break');
+            }
+            if (countEl.value > 0){
+          radioValues.push(countEl.value);
+        }else{
+          console.log('break')
+        }
         }
 
+          function blah(){
+            if(radioValues[0] === 'Wellington' 
+              && radioValues[1] === 'waitomo') {
+             valu.push('hello');
+          console.log(valu);
 
-  //This is click event for the form
-  function getFormData(){
-      // This stops the submit button from sending you to another page
-    var values;
-      // this accesses the property of the form in the document object
-      var oForm = document.forms[0]
-      // this accessed the elements of the form property
-      var els = oForm.elements;
-      // this function loops through the elements on the form
-      // and pushes them into the empty array. the variable values is
-      // then set to equal that array
-      function loopEls(elements){
-          //An empty array to push the values into
-          var valuesNew = [];
-          // loops through the form elements and gets their values
-          for (var i = 0; i < elements.length; i++) {
-              valuesNew.push(elements[i].value);
-          };
-          
-          values = valuesNew;
-          return valuesNew; 
-       
-    }
+            }
+         
+          }
+    
+ console.log(dataArray2[2].waitomo * dataArray[0].fuel);
 
-  console.log(values);
-  }
+// console.log(dataArray2[0].waitomo * 3)
+
+  
+  
 
 })()//iife ends ******

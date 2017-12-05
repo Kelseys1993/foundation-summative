@@ -10,12 +10,9 @@
   margin-left: 10%;
   margin-top: 15%; }
 
-#formTwo {
-  display: none; }
-
 h3 {
   position: absolute;
-  left: 25%; }
+  left: 20%; }
 
 [type="radio"]:checked + label:after, [type="radio"].with-gap:checked + label:after {
   background-color: white; }
@@ -27,59 +24,64 @@ h3 {
   border: 2px solid white; }
 
 [type="radio"]:not(:checked) + label, [type="radio"]:checked + label {
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Nunito', sans-serif;
   color: white;
-  font-size: 30px; }
+  font-size: 25px;
+  letter-spacing: 1px;
+  line-height: 1.2; }
 
 #one {
   position: absolute;
   top: 80px;
-  left: 100px; }
+  left: 80px; }
 
 #two {
   position: absolute;
   top: 80px;
-  left: 400px; }
+  left: 330px; }
 
 #three {
   position: absolute;
   top: 170px;
-  left: 100px; }
+  left: 80px; }
 
 #four {
   position: absolute;
   top: 170px;
-  left: 400px; }
+  left: 330px; }
+
+#formTwo {
+  display: none; }
 
 #pOne {
   position: absolute;
   top: 50px;
-  left: 100px; }
+  left: 80px; }
 
 #pTwo {
   position: absolute;
   top: 50px;
-  left: 400px; }
+  left: 370px; }
 
 #pThree {
   position: absolute;
   top: 120px;
-  left: 100px; }
+  left: 80px; }
 
 #pFour {
   position: absolute;
   top: 120px;
-  left: 400px; }
+  left: 370px; }
 
 #pFive {
   position: absolute;
   top: 190px;
-  left: 100px; }
+  left: 80px; }
 
 #pSix {
   position: absolute;
   top: 190px;
-  left: 400px; }
+  left: 370px; }
 
 .waves-effect {
   position: absolute;
@@ -96,7 +98,7 @@ h3 {
   font-size: 25px; }
 
 .btn-large:hover {
-  background-color: #5CB85C; }
+  background-color: #5cb85c; }
 
 .previous {
   left: 50px; }
@@ -118,6 +120,9 @@ h3 {
   position: absolute;
   top: 80px;
   font-size: 30px; }
+
+::-webkit-input-placeholder {
+  color: white; }
 
 #plus {
   position: absolute;
@@ -213,6 +218,9 @@ label > input:checked + img {
   width: 155px;
   height: 105px; }
 
+#vehicleOne:hover, #vehicleTwo:hover, #vehicleThree:hover, #vehicleFour:hover {
+  transform: scale(1.1); }
+
 #vehicleTwo {
   position: absolute;
   top: 35%;
@@ -256,5 +264,3 @@ label > input:checked + img {
 #vehicleFour > img {
   width: 180px;
   height: 100px; }
-
-/*# sourceMappingURL=form.css.map */
