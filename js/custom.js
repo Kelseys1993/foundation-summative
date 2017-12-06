@@ -13,7 +13,10 @@ var sub = document.getElementById('minus');
 var btn = document.getElementsByClassName('btn-large');
 var close = document.getElementById('modal-button2');
 var home = document.getElementById('logo');
-var trigger = document.getElementsByClassName('modal-trigger');
+var trigger1 = document.getElementById('trigger1')
+var trigger2 = document.getElementById('trigger2');
+var trigger3 = document.getElementById('trigger3');
+var trigger4 = document.getElementById('trigger4');
 var vehicle1 = document.getElementById('vehicleOne');
 var vehicle2 = document.getElementById('vehicleTwo');
 var vehicle3 = document.getElementById('vehicleThree');
@@ -24,29 +27,38 @@ var radioValues2 =[];
 var radioValues3 = [];
 var radioValues4 = [];
 var valu = [];
-init();
-console.dir(vehicle1);
-
-
-function init(){ 
+var fuelCost = [];
+var hireCost = [];
+sub.addEventListener('click', minus, false);
+add.addEventListener('click', plus, false);
+close.addEventListener('click', startAgain, false);
+home.addEventListener('click', startAgain, false);
 btn[2].addEventListener('click', prevDiv, false);
 btn[0].addEventListener('click', nextDiv, false);
 btn[4].addEventListener('click', prevDiv2, false);
 btn[1].addEventListener('click', nextDiv2, false);
 btn[5].addEventListener('click', prevDiv3, false);
 btn[3].addEventListener('click', nextDiv3, false);
-btn[3].addEventListener('click',  getRadioValue, false );
-btn[3].addEventListener('click',  getRadioValue2, false );
-btn[3].addEventListener('click',  getRadioValue3, false );
-btn[3].addEventListener('click', distances, false);
-btn[3].addEventListener('click', distances2, false);
-btn[3].addEventListener('click', distances3, false);
-btn[3].addEventListener('click', distances4, false);
-btn[3].addEventListener('click', showCar, false);
-sub.addEventListener('click', minus, false);
-add.addEventListener('click', plus, false);
-close.addEventListener('click', startAgain, false);
-home.addEventListener('click', startAgain, false);
+btn[3].addEventListener('click', init, false);
+trigger1.addEventListener('click', modalImage1, false);
+trigger2.addEventListener('click', modalImage2, false);
+trigger3.addEventListener('click', modalImage3, false);
+trigger4.addEventListener('click', modalImage4, false);
+
+
+
+function init(){ 
+getRadioValue();
+getRadioValue2();
+getRadioValue3();
+distances();
+distances3();
+distances4();
+showCar1();
+showCar2();
+showCar3();
+showCar4();
+
 }
 
 function plus(){
@@ -331,40 +343,96 @@ function distances2(){
     else if( radioValues[0] === 'Napier' && radioValues2[0] === 'castlepoint'){
        valu.push(dataArray2[3].castlepoint);
     console.log(valu);
+
     }
-carHire();
+
 }
-function showCar(){
-  if(radioValues3[0] === 2 && radioValues4[0] <= 10){
+function showCar1(){
+  if( radioValues3[0] === 1 && (radioValues4[0] >= 1 && radioValues4[0] <= 5)){
+   vehicle1.style.display = 'block'; 
+ 
+  } else{
     vehicle1.style.display = 'none';
-    vehicle3.style.left = '68%';
-    vehicle2.style.left = '35%';
-    vehicle4.style.display = 'block';
-    vehicle4.style.left = '2%';
-  } else if ((radioValues3[0] > 2 && radioValues3[0] < 5) &&  radioValues4[0] <= 10) {
-    vehicle1.style.display = 'none';
-    vehicle2.style.display = 'block';
-    vehicle4.style.display = 'block';
-    vehicle3.style.left = '18%';
-    vehicle4.style.left = '52%';
-  } else if (radioValues3[0] > 5  && radioValues4[0] <= 15)  {
-    vehicle1.style.display = 'none';
-    vehicle2.style.display = 'none';
-    vehicle3.style.display = 'none';
-    vehicle4.style.display = 'block';
-    vehicle4.style.left = '36%';
   }
 }
-function carHire(){
- console.log( valu[0] * radioValues4);
-
+function showCar2(){
+   if((radioValues3[0] >= 1 && radioValues3[0]  <= 2) && (radioValues4[0] >= 1 && radioValues4[0] <= 10)){
+      vehicle2.style.display = 'block'; 
+    
+   }else{
+    vehicle2.style.display = 'none';
+  }
+}
+function showCar3(){
+   if((radioValues3[0] >= 1 && radioValues3[0]  <= 5) && (radioValues4[0] >= 3 && radioValues4[0] <= 10)){
+      vehicle3.style.display = 'block'; 
+    
+   }else{
+    vehicle3.style.display = 'none';
+  }
+}
+function showCar4(){
+   if((radioValues3[0] >= 2 && radioValues3[0]  <= 6) &&  (radioValues4[0] >= 2 && radioValues4[0]  <= 15)){
+      vehicle4.style.display = 'block'; 
+   }else{
+    vehicle4.style.display = 'none';
+  }
+}
+function modalImage1(){
+ $('#modalimage1').show();
+ $('#heading1').show();
+ $('#modalimage2').hide();
+ $('#heading2').hide();
+ $('#heading3').hide();
+ $('#modalimage3').hide();
+ $('#heading4').hide();
+ $('#modalimage4').hide();
+console.log(valu[0] / 100 * dataArray[0].fuel * 2.10) ;
+console.log(radioValues4[0] * dataArray[0].hire);
 }
 
- // console.log(dataArray2[2].waitomo * dataArray[0].fuel);
+function modalImage2(){
+ $('#modalimage1').hide();
+ $('#heading1').hide();
+ $('#modalimage3').hide();
+ $('#modalimage4').hide();
+ $('#heading3').hide();
+ $('#heading4').hide();
+ $('#modalimage2').show();
+ $('#heading2').show();
+ $( "<div><p></p></div>" ).appendTo( "#rental" )
+ fuelCost.push(valu[0] / 100 * dataArray[1].fuel * 2.10)
+ hireCost.push(radioValues4[0] * dataArray[1].hire)
+ console.log(fuelCost) ;
+console.log(hireCost);
+$('#fuel').append('<p> $: </p>' + fuelCost);
+}
 
-// console.log(dataArray2[0].waitomo * 3)
+function modalImage3(){
+  $('#modalimage1').hide();
+  $('#heading1').hide();
+  $('#modalimage2').hide();
+  $('#heading2').hide();
+  $('#modalimage4').hide();
+  $('#heading4').hide();
+  $('#modalimage3').show();
+  $('#heading3').show();
+console.log(valu[0] / 100 * dataArray[2].fuel * 2.10) ;
+console.log(radioValues4[0] * dataArray[2].hire);
+}
 
-  
-  
+function modalImage4(){
+  $('#modalimage1').hide();
+  $('#heading1').hide();
+  $('#modalimage2').hide();
+  $('#heading2').hide();
+  $('#modalimage3').hide();
+  $('#heading3').hide();
+  $('#modalimage4').show();
+  $('#heading4').show();
+  console.log(valu[0] / 100 * dataArray[3].fuel * 2.10) ;
+console.log(radioValues4[0] * dataArray[3].hire);
+}
+
 
 })();//iife ends ******

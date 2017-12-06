@@ -232,7 +232,7 @@ label > input:checked + img {
 
 #vehicleThree {
   position: absolute;
-  top: 35%;
+  top: 18%;
   left: 65%;
   background-color: white;
   border-radius: 20px;
@@ -241,13 +241,18 @@ label > input:checked + img {
 
 #vehicleFour {
   position: absolute;
-  top: 35%;
+  top: 55%;
   left: 65%;
   background-color: white;
   border-radius: 20px;
   width: 185px;
-  height: 105px;
-  display: none; }
+  height: 105px; }
+
+#error-message {
+  display: none;
+  font-family: 'Nunito', sans-serif;
+  font-size: 30px;
+  color: white; }
 
 #vehicleOne > img {
   width: 150px;
