@@ -4,13 +4,14 @@
 
 body{
   font-family:'Amatic SC', cursive;
-  width: 786px;
+  width: 768px;
   margin: 0 auto;
 }
 .page-container{
-  height: 100%;
-  width: 786px;
+  height:100%;
+  width: 100%;
   position: relative;
+  margin: 0 auto;
 }
 #header{
     width: 100%;

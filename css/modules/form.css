@@ -98,7 +98,7 @@ h3 {
   font-size: 25px; }
 
 .btn-large:hover {
-  background-color: #5CB85C; }
+  background-color: #5cb85c; }
 
 .previous {
   left: 50px; }
@@ -211,42 +211,42 @@ label > input:checked + img {
 
 #vehicleOne {
   position: absolute;
-  top: 35%;
-  left: 5%;
+  top: 20%;
+  left: 15%;
   background-color: white;
   border-radius: 20px;
-  width: 155px;
-  height: 105px; }
+  width: 185px;
+  height: 95px; }
 
 #vehicleOne:hover, #vehicleTwo:hover, #vehicleThree:hover, #vehicleFour:hover {
   transform: scale(1.1); }
 
 #vehicleTwo {
   position: absolute;
-  top: 35%;
-  left: 32.8%;
+  top: 50%;
+  left: 15%;
   background-color: white;
   border-radius: 20px;
   width: 185px;
-  height: 105px; }
+  height: 95px; }
 
 #vehicleThree {
   position: absolute;
-  top: 18%;
-  left: 65%;
+  top: 20%;
+  left: 55%;
   background-color: white;
   border-radius: 20px;
   width: 185px;
-  height: 105px; }
+  height: 95px; }
 
 #vehicleFour {
   position: absolute;
-  top: 55%;
-  left: 65%;
+  top: 50%;
+  left: 55%;
   background-color: white;
   border-radius: 20px;
   width: 185px;
-  height: 105px; }
+  height: 95px; }
 
 #error-message {
   display: none;
@@ -259,7 +259,7 @@ label > input:checked + img {
   height: 100px; }
 
 #vehicleTwo > img {
-  width: 180px;
+  width: 190px;
   height: 100px; }
 
 #vehicleThree > img {
@@ -268,6 +268,4 @@ label > input:checked + img {
 
 #vehicleFour > img {
   width: 180px;
-  height: 100px; }
-
-/*# sourceMappingURL=form.css.map */
+  height: 95px; }

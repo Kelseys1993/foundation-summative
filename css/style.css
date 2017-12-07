@@ -147,7 +147,7 @@ h3 {
   font-size: 25px; }
 
 .btn-large:hover {
-  background-color: #5CB85C; }
+  background-color: #5cb85c; }
 
 .previous {
   left: 50px; }
@@ -260,42 +260,42 @@ label > input:checked + img {
 
 #vehicleOne {
   position: absolute;
-  top: 35%;
-  left: 5%;
+  top: 20%;
+  left: 15%;
   background-color: white;
   border-radius: 20px;
-  width: 155px;
-  height: 105px; }
+  width: 185px;
+  height: 95px; }
 
 #vehicleOne:hover, #vehicleTwo:hover, #vehicleThree:hover, #vehicleFour:hover {
   transform: scale(1.1); }
 
 #vehicleTwo {
   position: absolute;
-  top: 35%;
-  left: 32.8%;
+  top: 50%;
+  left: 15%;
   background-color: white;
   border-radius: 20px;
   width: 185px;
-  height: 105px; }
+  height: 95px; }
 
 #vehicleThree {
   position: absolute;
-  top: 18%;
-  left: 65%;
+  top: 20%;
+  left: 55%;
   background-color: white;
   border-radius: 20px;
   width: 185px;
-  height: 105px; }
+  height: 95px; }
 
 #vehicleFour {
   position: absolute;
-  top: 55%;
-  left: 65%;
+  top: 50%;
+  left: 55%;
   background-color: white;
   border-radius: 20px;
   width: 185px;
-  height: 105px; }
+  height: 95px; }
 
 #error-message {
   display: none;
@@ -308,7 +308,7 @@ label > input:checked + img {
   height: 100px; }
 
 #vehicleTwo > img {
-  width: 180px;
+  width: 190px;
   height: 100px; }
 
 #vehicleThree > img {
@@ -317,7 +317,7 @@ label > input:checked + img {
 
 #vehicleFour > img {
   width: 180px;
-  height: 100px; }
+  height: 95px; }
 
 .modal-content {
   width: 500px;
@@ -339,59 +339,64 @@ label > input:checked + img {
 #modalimage2 {
   width: 300px;
   height: 160px;
-  margin-left: 20%;
-  display: none; }
-
-#heading2 {
-  display: none; }
+  margin-left: 20%; }
 
 #modalimage3 {
   width: 300px;
   height: 200px;
-  margin-left: 20%;
-  display: none; }
-
-#heading3 {
-  display: none; }
+  margin-left: 20%; }
 
 #modalimage4 {
   width: 300px;
   height: 200px;
-  margin-left: 20%;
-  display: none; }
+  margin-left: 20%; }
 
-#heading4 {
-  display: none; }
+h4 {
+  font-family: 'Nunito', sans-serif; }
 
-#trip-cost > p {
+.trip-cost > p {
   text-align: center;
   background-color: #76b2b7;
   font-size: 30px;
   color: white;
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+  font-family: 'Nunito', sans-serif;
+  border: 1px solid black;
+  border-bottom: none; }
 
 .style {
   border: 1px solid black;
-  font-size: 25px; }
+  border-bottom: none;
+  height: 88px;
+  font-size: 25px;
+  font-family: 'Nunito', sans-serif; }
+
+.bottom {
+  border-bottom: 1px solid black; }
 
 .style > p {
   margin-left: 10px; }
 
 #modal-button {
-  margin-top: 90%; }
+  margin-top: 48%;
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px; }
 
 #modal-button2 {
-  margin-top: 90%; }
+  margin-top: 48%;
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px; }
 
 body {
   font-family: 'Amatic SC', cursive;
-  width: 786px;
+  width: 768px;
   margin: 0 auto; }
 
 .page-container {
   height: 100%;
-  width: 786px;
-  position: relative; }
+  width: 100%;
+  position: relative;
+  margin: 0 auto; }
 
 #header {
   width: 100%;
@@ -462,5 +467,3 @@ h1 {
 
 #box6 {
   display: none; }
-
-/*# sourceMappingURL=style.css.map */

@@ -18,48 +18,50 @@
 #modalimage2 {
   width: 300px;
   height: 160px;
-  margin-left: 20%;
-  display: none; }
-
-#heading2 {
-  display: none; }
+  margin-left: 20%; }
 
 #modalimage3 {
   width: 300px;
   height: 200px;
-  margin-left: 20%;
-  display: none; }
-
-#heading3 {
-  display: none; }
+  margin-left: 20%; }
 
 #modalimage4 {
   width: 300px;
   height: 200px;
-  margin-left: 20%;
-  display: none; }
+  margin-left: 20%; }
 
-#heading4 {
-  display: none; }
+h4 {
+  font-family: 'Nunito', sans-serif; }
 
-#trip-cost > p {
+.trip-cost > p {
   text-align: center;
   background-color: #76b2b7;
   font-size: 30px;
   color: white;
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+  font-family: 'Nunito', sans-serif;
+  border: 1px solid black;
+  border-bottom: none; }
 
 .style {
   border: 1px solid black;
-  font-size: 25px; }
+  border-bottom: none;
+  height: 88px;
+  font-size: 25px;
+  font-family: 'Nunito', sans-serif; }
+
+.bottom {
+  border-bottom: 1px solid black; }
 
 .style > p {
   margin-left: 10px; }
 
 #modal-button {
-  margin-top: 90%; }
+  margin-top: 48%;
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px; }
 
 #modal-button2 {
-  margin-top: 90%; }
-
-/*# sourceMappingURL=modal.css.map */
+  margin-top: 48%;
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px; }

@@ -13,7 +13,7 @@ var sub = document.getElementById('minus');
 var btn = document.getElementsByClassName('btn-large');
 var close = document.getElementById('modal-button2');
 var home = document.getElementById('logo');
-var trigger1 = document.getElementById('trigger1')
+var trigger1 = document.getElementById('trigger1');
 var trigger2 = document.getElementById('trigger2');
 var trigger3 = document.getElementById('trigger3');
 var trigger4 = document.getElementById('trigger4');
@@ -29,6 +29,8 @@ var radioValues4 = [];
 var valu = [];
 var fuelCost = [];
 var hireCost = [];
+var totalCost = [];
+
 sub.addEventListener('click', minus, false);
 add.addEventListener('click', plus, false);
 close.addEventListener('click', startAgain, false);
@@ -40,10 +42,10 @@ btn[1].addEventListener('click', nextDiv2, false);
 btn[5].addEventListener('click', prevDiv3, false);
 btn[3].addEventListener('click', nextDiv3, false);
 btn[3].addEventListener('click', init, false);
-trigger1.addEventListener('click', modalImage1, false);
-trigger2.addEventListener('click', modalImage2, false);
-trigger3.addEventListener('click', modalImage3, false);
-trigger4.addEventListener('click', modalImage4, false);
+trigger1.addEventListener('click', fillModal1, false);
+trigger2.addEventListener('click', fillModal2, false);
+trigger3.addEventListener('click', fillModal3, false);
+trigger4.addEventListener('click', fillModal4, false);
 
 
 
@@ -52,6 +54,7 @@ getRadioValue();
 getRadioValue2();
 getRadioValue3();
 distances();
+distances2();
 distances3();
 distances4();
 showCar1();
@@ -82,8 +85,7 @@ document.getElementById('formTwo').style.display = 'block';
 function prevDiv(){
 document.getElementById('formTwo').style.display = 'none';
 document.getElementById('formOne').style.display = 'block';
-radioValues.pop();
-valu.pop();
+
 
 
 }
@@ -96,7 +98,6 @@ document.getElementById('formThree').style.display = 'block';
 function prevDiv2(){
 document.getElementById('formThree').style.display = 'none';
 document.getElementById('formTwo').style.display = 'block';
-radioValues2.pop();
 
 }
 function nextDiv3(){
@@ -111,9 +112,76 @@ document.getElementById('formFour').style.display = 'block';
 function prevDiv3(){
 document.getElementById('formFour').style.display = 'none';
 document.getElementById('formThree').style.display = 'block';
+radioValues.pop();
+radioValues2.pop();
 radioValues3.pop();
 radioValues4.pop();
+valu.pop();
+reset1();
+reset2();
+reset3();
+reset4();
+}
 
+function reset1(){
+vehicle1.style.opacity = '1';
+vehicle1.style.pointerEvents = 'auto';
+$('#vehicleOne').mouseover(function(){
+  $('#vehicleOne').css('transform', 'scale(1.1');
+});
+$('#vehicleOne').mouseout(function(){
+  $('#vehicleOne').css('transform', 'scale(1)');
+});
+$('#rental1').empty();
+$('#distance1').empty();
+$('#fuel1').empty();
+$('#total1').empty();
+}
+
+function reset2(){
+vehicle2.style.opacity = '1';
+vehicle2.style.pointerEvents = 'auto';
+$('#vehicleTwo').mouseover(function(){
+  $('#vehicleTwo').css('transform', 'scale(1.1');
+});
+$('#vehicleTwo').mouseout(function(){
+  $('#vehicleTwo').css('transform', 'scale(1)');
+});
+
+$('#rental2').empty();
+$('#distance2').empty();
+$('#fuel2').empty();
+$('#total2').empty();
+}
+
+function reset3(){
+vehicle3.style.opacity = '1';
+vehicle3.style.pointerEvents = 'auto';
+$('#vehicleThree').mouseover(function(){
+  $('#vehicleThree').css('transform', 'scale(1.1');
+});
+$('#vehicleThree').mouseout(function(){
+  $('#vehicleThree').css('transform', 'scale(1)');
+});
+$('#rental3').empty();
+$('#distance3').empty();
+$('#fuel3').empty();
+$('#total3').empty();
+}
+
+function reset4(){
+vehicle4.style.opacity = '1';
+vehicle4.style.pointerEvents = 'auto';
+$('#vehicleFour').mouseover(function(){
+  $('#vehicleFour').css('transform', 'scale(1.1');
+});
+$('#vehicleFour').mouseout(function(){
+  $('#vehicleFour').css('transform', 'scale(1)');
+});
+$('#rental4').empty();
+$('#distance4').empty();
+$('#fuel4').empty();
+$('#total4').empty();
 }
 
 function startAgain(){
@@ -122,9 +190,6 @@ function startAgain(){
 },500);
 
 }
-console.log(dataArray);
-console.log(dataArray2);
-
 
 function getRadioValue() {
     // group1 radio values
@@ -140,20 +205,18 @@ function getRadioValue() {
     }
     if (rdValue == 'Auckland') {
       radioValues.push(rdValue);
-      console.log(radioValues);
     } else if( rdValue == 'Wellington'){
        radioValues.push(rdValue);
-      console.log(radioValues);
     } else if ( rdValue == 'New Plymouth'){
        radioValues.push(rdValue);
-    console.log(radioValues);
     } else if ( rdValue == 'Napier'){
        radioValues.push(rdValue);
-    console.log(radioValues);
     } else {
       console.log('break');
     }
     }
+
+
 function getRadioValue2() {
     // group2 radio values
     var radios = theForm.elements['group2'];
@@ -171,19 +234,14 @@ function getRadioValue2() {
       console.log(radioValues2);
     } else if( rdValue == 'taupo'){
        radioValues2.push(rdValue);
-      console.log(radioValues2);
     } else if ( rdValue == 'rotorua'){
        radioValues2.push(rdValue);
-    console.log(radioValues2);
     } else if ( rdValue == 'matamata'){
        radioValues2.push(rdValue);
-    console.log(radioValues2);
     } else if ( rdValue == 'tauranga'){
        radioValues2.push(rdValue);
-    console.log(radioValues2);
     }else if ( rdValue == 'castlepoint'){
        radioValues2.push(rdValue);
-    console.log(radioValues2);
     } else {
       console.log('break');
     }
@@ -204,28 +262,21 @@ function getRadioValue3() {
     }
     if (rdValue == '1') {
     radioValues3.push(parseInt(rdValue));
-    console.log(radioValues3);
     } else if( rdValue == '2'){
      radioValues3.push(parseInt(rdValue));
-    console.log(radioValues3);
     } else if ( rdValue == '3'){
      radioValues3.push(parseInt(rdValue));
-    console.log(radioValues3);
     } else if ( rdValue == '4'){
      radioValues3.push(parseInt(rdValue));
-    console.log(radioValues3);
     } else if ( rdValue == '5'){
      radioValues3.push(parseInt(rdValue));
-    console.log(radioValues3);
     }else if ( rdValue == '6'){
      radioValues3.push(parseInt(rdValue));
-    console.log(radioValues3);
     } else {
     console.log('break');
     }
     if (countEl.value > 0){
     radioValues4.push( parseInt(countEl.value));
-    console.log(radioValues4);
     }else{
     console.log('break');
     }
@@ -236,26 +287,20 @@ function getRadioValue3() {
 function distances(){
     if(radioValues[0] === 'Auckland' && radioValues2[0] === 'waitomo') {
      valu.push(dataArray2[0].waitomo);
-    console.log(valu);
     } else if( radioValues[0] === 'Auckland' && radioValues2[0] === 'rotorua'){
        valu.push(dataArray2[0].rotorua);
-    console.log(valu);
     }
     else if( radioValues[0] === 'Auckland' && radioValues2[0] === 'tauranga'){
        valu.push(dataArray2[0].tauranga);
-    console.log(valu);
     }
     else if( radioValues[0] === 'Auckland' && radioValues2[0] === 'taupo'){
        valu.push(dataArray2[0].taupo);
-    console.log(valu);
     }
     else if( radioValues[0] === 'Auckland' && radioValues2[0] === 'matamata'){
        valu.push(dataArray2[0].matamata);
-    console.log(valu);
     }
     else if( radioValues[0] === 'Auckland' && radioValues2[0] === 'castlepoint'){
        valu.push(dataArray2[0].castlepoint);
-    console.log(valu);
     }
 
 }
@@ -263,28 +308,22 @@ function distances(){
 //gets the distances from wellington to the seconds location
 // and puts it into array valu
 function distances2(){
-    if(radioValues[0] === 'Wellington' && radioValues2[0] === 'waitomo') {
-     valu.push(dataArray2[1].waitomo);
-    console.log(valu);
+    if( radioValues[0] === 'Wellington' && radioValues2[0] === 'waitomo'){
+       valu.push(dataArray2[1].waitomo);
     } else if( radioValues[0] === 'Wellington' && radioValues2[0] === 'rotorua'){
        valu.push(dataArray2[1].rotorua);
-    console.log(valu);
     }
     else if( radioValues[0] === 'Wellington' && radioValues2[0] === 'tauranga'){
        valu.push(dataArray2[1].tauranga);
-    console.log(valu);
     }
     else if( radioValues[0] === 'Wellington' && radioValues2[0] === 'taupo'){
        valu.push(dataArray2[1].taupo);
-    console.log(valu);
     }
     else if( radioValues[0] === 'Wellington' && radioValues2[0] === 'matamata'){
        valu.push(dataArray2[1].matamata);
-    console.log(valu);
     }
     else if( radioValues[0] === 'Wellington' && radioValues2[0] === 'castlepoint'){
        valu.push(dataArray2[1].castlepoint);
-    console.log(valu);
     }
 
 }
@@ -292,28 +331,24 @@ function distances2(){
 //gets the distances from new plymouth to the seconds location
 // and puts it into array valu
  function distances3(){
-    if(radioValues[0] === 'New Plymouth' && radioValues2[0] === 'waitomo') {
+    if(radioValues[0] === 'New Plymouth' && radioValues2[0] === 'waitomo'){
      valu.push(dataArray2[2].waitomo);
-    console.log(valu);
+     console.log('a');
     } else if( radioValues[0] === 'New Plymouth' && radioValues2[0] === 'rotorua'){
        valu.push(dataArray2[2].rotorua);
-    console.log(valu);
     }
     else if( radioValues[0] === 'New Plymouth' && radioValues2[0] === 'tauranga'){
        valu.push(dataArray2[2].tauranga);
-    console.log(valu);
     }
     else if( radioValues[0] === 'New Plymouth' && radioValues2[0] === 'taupo'){
        valu.push(dataArray2[2].taupo);
-    console.log(valu);
     }
     else if( radioValues[0] === 'New Plymouth' && radioValues2[0] === 'matamata'){
        valu.push(dataArray2[2].matamata);
-    console.log(valu);
     }
     else if( radioValues[0] === 'New Plymouth' && radioValues2[0] === 'castlepoint'){
        valu.push(dataArray2[2].castlepoint);
-    console.log(valu);
+  
     }
 
 }
@@ -321,38 +356,35 @@ function distances2(){
 //gets the distances from naiper to the seconds location
 // and puts it into array valu
  function distances4(){
-    if(radioValues[0] === 'Naiper' && radioValues2[0] === 'waitomo') {
-     valu.push(dataArray2[3].waitomo);
-    console.log(valu);
-    } else if( radioValues[0] === 'Napier' && radioValues2[0] === 'rotorua'){
-       valu.push(dataArray2[3].rotorua);
-    console.log(valu);
+   if( radioValues[0] == 'Napier' && radioValues2[0] == 'waitomo'){
+    valu.push(dataArray2[3].waitomo);
+   }else if( radioValues[0] === 'Napier' && radioValues2[0] === 'rotorua'){
+    valu.push(dataArray2[3].rotorua);
     }
     else if( radioValues[0] === 'Napier' && radioValues2[0] === 'tauranga'){
        valu.push(dataArray2[3].tauranga);
-    console.log(valu);
     }
     else if( radioValues[0] === 'Napier' && radioValues2[0] === 'taupo'){
        valu.push(dataArray2[3].taupo);
-    console.log(valu);
     }
     else if( radioValues[0] === 'Napier' && radioValues2[0] === 'matamata'){
        valu.push(dataArray2[3].matamata);
-    console.log(valu);
     }
     else if( radioValues[0] === 'Napier' && radioValues2[0] === 'castlepoint'){
        valu.push(dataArray2[3].castlepoint);
-    console.log(valu);
-
     }
 
 }
+
+
 function showCar1(){
   if( radioValues3[0] === 1 && (radioValues4[0] >= 1 && radioValues4[0] <= 5)){
    vehicle1.style.display = 'block'; 
  
   } else{
-    vehicle1.style.display = 'none';
+    vehicle1.style.opacity = '0.4';
+    vehicle1.style.transform = 'none';
+    vehicle1.style.pointerEvents = 'none';
   }
 }
 function showCar2(){
@@ -360,7 +392,10 @@ function showCar2(){
       vehicle2.style.display = 'block'; 
     
    }else{
-    vehicle2.style.display = 'none';
+    vehicle2.style.opacity = '0.4';
+    vehicle2.style.transform = 'none';
+    vehicle2.style.pointerEvents = 'none';
+
   }
 }
 function showCar3(){
@@ -368,70 +403,87 @@ function showCar3(){
       vehicle3.style.display = 'block'; 
     
    }else{
-    vehicle3.style.display = 'none';
+    vehicle3.style.opacity = '0.4';
+    vehicle3.style.transform = 'none';
+    vehicle3.style.pointerEvents = 'none';
   }
 }
 function showCar4(){
    if((radioValues3[0] >= 2 && radioValues3[0]  <= 6) &&  (radioValues4[0] >= 2 && radioValues4[0]  <= 15)){
       vehicle4.style.display = 'block'; 
    }else{
-    vehicle4.style.display = 'none';
+    vehicle4.style.opacity = '0.4';
+    vehicle4.style.transform = 'none';
+    vehicle4.style.pointerEvents = 'none';
   }
 }
-function modalImage1(){
- $('#modalimage1').show();
- $('#heading1').show();
- $('#modalimage2').hide();
- $('#heading2').hide();
- $('#heading3').hide();
- $('#modalimage3').hide();
- $('#heading4').hide();
- $('#modalimage4').hide();
-console.log(valu[0] / 100 * dataArray[0].fuel * 2.10) ;
-console.log(radioValues4[0] * dataArray[0].hire);
+function fillModal1(){
+    $('#rental1').empty();
+    $('#distance1').empty();
+    $('#fuel1').empty();
+    $('#total1').empty();
+    fuelCost.pop();
+    hireCost.pop();
+    totalCost.pop();
+    fuelCost.push(Math.round(valu[0] / 100 * dataArray[0].fuel * 2.10));
+    hireCost.push(radioValues4[0] * dataArray[0].hire);
+    totalCost.push( fuelCost[0] + hireCost[0]);
+    $('#distance1').append('Distance:' + ' '  + valu +'km');
+    $('#rental1').append('Rental Price:' + ' '+ '$' + hireCost);
+    $('#fuel1').append('Fuel Cost:' + ' ' + '$' + fuelCost);
+    $('#total1').append('Total Cost:' + ' ' + '$' + totalCost);
 }
 
-function modalImage2(){
- $('#modalimage1').hide();
- $('#heading1').hide();
- $('#modalimage3').hide();
- $('#modalimage4').hide();
- $('#heading3').hide();
- $('#heading4').hide();
- $('#modalimage2').show();
- $('#heading2').show();
- $( "<div><p></p></div>" ).appendTo( "#rental" )
- fuelCost.push(valu[0] / 100 * dataArray[1].fuel * 2.10)
- hireCost.push(radioValues4[0] * dataArray[1].hire)
- console.log(fuelCost) ;
-console.log(hireCost);
-$('#fuel').append('<p> $: </p>' + fuelCost);
+function fillModal2(){
+    $('#rental2').empty();
+    $('#distance2').empty();
+    $('#fuel2').empty();
+    $('#total2').empty();
+    fuelCost.pop();
+    hireCost.pop();
+    totalCost.pop();
+    fuelCost.push(Math.round(valu[0] / 100 * dataArray[1].fuel * 2.10));
+    hireCost.push(radioValues4[0] * dataArray[1].hire);
+    totalCost.push( fuelCost[0] + hireCost[0]);
+    $('#distance2').append('Distance:' + ' '  + valu +'km');
+    $('#rental2').append('Rental Price:' + ' '+ '$' + hireCost);
+    $('#fuel2').append('Fuel Cost:' + ' ' + '$' + fuelCost);
+    $('#total2').append('Total Cost:' + ' ' + '$' + totalCost);
+
 }
 
-function modalImage3(){
-  $('#modalimage1').hide();
-  $('#heading1').hide();
-  $('#modalimage2').hide();
-  $('#heading2').hide();
-  $('#modalimage4').hide();
-  $('#heading4').hide();
-  $('#modalimage3').show();
-  $('#heading3').show();
-console.log(valu[0] / 100 * dataArray[2].fuel * 2.10) ;
-console.log(radioValues4[0] * dataArray[2].hire);
+function fillModal3(){
+    $('#rental3').empty();
+    $('#distance3').empty();
+    $('#fuel3').empty();
+    $('#total3').empty();
+    fuelCost.pop();
+    hireCost.pop();
+    totalCost.pop();
+    fuelCost.push(Math.round(valu[0] / 100 * dataArray[2].fuel * 2.10));
+    hireCost.push(radioValues4[0] * dataArray[2].hire);
+    totalCost.push( fuelCost[0] + hireCost[0]);
+    $('#distance3').append('Distance:' + ' '  + valu +'km');
+    $('#rental3').append('Rental Price:' + ' '+ '$' + hireCost);
+    $('#fuel3').append('Fuel Cost:' + ' ' + '$' + fuelCost);
+    $('#total3').append('Total Cost:' + ' ' + '$' + totalCost);
 }
 
-function modalImage4(){
-  $('#modalimage1').hide();
-  $('#heading1').hide();
-  $('#modalimage2').hide();
-  $('#heading2').hide();
-  $('#modalimage3').hide();
-  $('#heading3').hide();
-  $('#modalimage4').show();
-  $('#heading4').show();
-  console.log(valu[0] / 100 * dataArray[3].fuel * 2.10) ;
-console.log(radioValues4[0] * dataArray[3].hire);
+function fillModal4(){
+    $('#rental4').empty();
+    $('#distance4').empty();
+    $('#fuel4').empty();
+    $('#total4').empty();
+    fuelCost.pop();
+    hireCost.pop();
+    totalCost.pop();
+    fuelCost.push(Math.round(valu[0] / 100 * dataArray[3].fuel * 2.10));
+    hireCost.push(radioValues4[0] * dataArray[3].hire);
+    totalCost.push( fuelCost[0] + hireCost[0]);
+    $('#distance4').append('Distance:' + ' '  + valu +'km');
+    $('#rental4').append('Rental Price:' + ' '+ '$' + hireCost);
+    $('#fuel4').append('Fuel Cost:' + ' ' + '$' + fuelCost);
+    $('#total4').append('Total Cost:' + ' ' + '$' + totalCost);
 }
 
 

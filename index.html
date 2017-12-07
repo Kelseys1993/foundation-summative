@@ -196,13 +196,13 @@
       <img src='img/motobike.png' class='modal-trigger' href="#modal1" id='trigger1'>
     </div>
     <div id='vehicleTwo'>
-      <img src='img/small-car.png' class='modal-trigger' href="#modal1" id='trigger2'>
+      <img src='img/small-car.png' class='modal-trigger' href="#modal2" id='trigger2'>
     </div>
       <div id='vehicleThree'>
-      <img src='img/large-car.png' class='modal-trigger' href="#modal1" id='trigger3'>
+      <img src='img/large-car.png' class='modal-trigger' href="#modal3" id='trigger3'>
     </div>
       <div id='vehicleFour'>
-      <img src='img/motorhome.png' class='modal-trigger' href="#modal1" id='trigger4'>
+      <img src='img/motorhome.png' class='modal-trigger' href="#modal4" id='trigger4'>
     </div>
     <div id='error-message'>
       <p> No vehicle avalaible for those options </p>
@@ -213,40 +213,29 @@
 </div>
 <!-- form four ends -->
 
-  <!-- Modal Starts -->
+  <!-- Modal One Starts -->
   <div id="modal1" class="modal">
     <div class="modal-content">
       <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">X</a>
       <h4 id='heading1'>BMW R1200GS</h4>
-      <h4 id='heading2'>Hyundai New i10</h4>
-      <h4 id='heading3'>Hyundai i40 Tourer</h4>
-      <h4 id='heading4'>Gulf Stream</h4>
       <div>
         <img src='img/motobike.png' alt='motorbike' id='modalimage1'>
-        <img src='img/small-car.png' alt='small-car' id='modalimage2'>
-        <img src='img/large-car.png' alt='large-car' id='modalimage3'>
-        <img src='img/motorhome.png' alt='motorhome' id='modalimage4'>
+    
         <div> 
-          <div id='trip-cost'>
+          <div class='trip-cost'>
             <p>Trip Cost</p>          
           </div>
-          <div id='distance' class='style'>
-            <p>Distance </p>
+          <div  class='style'>
+            <p id='distance1'></p>
           </div>
-          <div id='people' class='style'>
-            <p>people </p>
+          <div  class='style'>
+            <p id='rental1'></p>
           </div>
-          <div id='days' class='style'>
-            <p>  Days</p>
+          <div  class='style'>
+            <p id='fuel1'> </p>
           </div>
-          <div id='rental' class='style'>
-            <p> Rental price</p>
-          </div>
-          <div id='fuel' class='style'>
-            <p> Fuel Cost</p>
-          </div>
-          <div id='total' class='style'>
-            <p> Total Cost</p>
+          <div class='style bottom'>
+            <p id='total1' > </p>
           </div>
       </div>
     </div>
@@ -256,7 +245,119 @@
     </div>
   </div>
   </div>
-<!--   modal ends -->
+  <!-- modal one ends -->
+
+  <!-- modal two starts -->
+<div id="modal2" class="modal">
+    <div class="modal-content">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">X</a>
+      
+      <h4 id='heading2'>Hyundai New i10</h4>
+      <p>$129per day</p>
+      <div>
+        
+        <img src='img/small-car.png' alt='small-car' id='modalimage2'>
+       
+        <div> 
+          <div class='trip-cost'>
+            <p>Trip Cost</p>          
+          </div>
+          <div  class='style'>
+            <p id='distance2'></p>
+          </div>
+          <div  class='style'>
+            <p id='rental2'> </p>
+          </div>
+          <div  class='style'>
+            <p id='fuel2'> </p>
+          </div>
+          <div  class='style bottom'>
+            <p id='total2'> </p>
+          </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href='http://www.tourismnewzealand.com' class="waves-effect waves-light btn-large" id="modal-button">Book</a>
+  <a class="waves-effect waves-light btn-large previous" id='modal-button2' >New Trip</a>
+    </div>
+  </div>
+  </div>
+<!--   modal two ends -->
+
+  <!-- modal three starts -->
+<div id="modal3" class="modal">
+    <div class="modal-content">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">X</a>
+      
+      
+      <h4 id='heading3'>Hyundai i40 Tourer</h4>
+      
+      <div>
+        
+        <img src='img/large-car.png' alt='large-car' id='modalimage3'>
+
+       
+        <div> 
+          <div class='trip-cost'>
+            <p>Trip Cost</p>          
+          </div>
+          <div class='style'>
+            <p id='distance3' ></p>
+          </div>
+          <div  class='style'>
+            <p id='rental3'></p>
+          </div>
+          <div  class='style'>
+            <p id='fuel3'> </p>
+          </div>
+          <div class='style bottom'>
+            <p id='total3' > </p>
+          </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href='http://www.tourismnewzealand.com' class="waves-effect waves-light btn-large" id="modal-button">Book</a>
+  <a class="waves-effect waves-light btn-large previous" id='modal-button2' >New Trip</a>
+    </div>
+  </div>
+  </div>
+  <!-- modal three ends -->
+
+ <!--  modal four starts -->
+  <div id="modal4" class="modal">
+    <div class="modal-content">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">X</a>
+      
+    
+      <h4 id='heading4'>Gulf Stream</h4>
+      <div>
+ 
+        <img src='img/motorhome.png' alt='motorhome' id='modalimage4'>
+        <div> 
+          <div class='trip-cost'>
+            <p>Trip Cost</p>          
+          </div>
+          <div  class='style'>
+            <p id='distance4'></p>
+          </div>
+          <div class='style'>
+            <p id='rental4'> </p>
+          </div>
+          <div class='style'>
+            <p id='fuel4'> </p>
+          </div>
+          <div class='style bottom'>
+            <p id='total4' > </p>
+          </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href='http://www.tourismnewzealand.com' class="waves-effect waves-light btn-large" id="modal-button">Book</a>
+  <a class="waves-effect waves-light btn-large previous" id='modal-button2' >New Trip</a>
+    </div>
+  </div>
+  </div>
+  <!-- modal four ends -->
 
 <div id='footer'> 
 </div>
