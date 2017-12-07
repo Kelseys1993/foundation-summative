@@ -147,7 +147,7 @@ h3 {
   font-size: 25px; }
 
 .btn-large:hover {
-  background-color: #5cb85c; }
+  background-color: #5CB85C; }
 
 .previous {
   left: 50px; }
@@ -377,13 +377,13 @@ h4 {
 .style > p {
   margin-left: 10px; }
 
-#modal-button {
-  margin-top: 48%;
+.modal-button {
+  top: 150%;
   font-family: 'Nunito', sans-serif;
   font-size: 20px; }
 
-#modal-button2 {
-  margin-top: 48%;
+.modal-button2 {
+  top: 150%;
   font-family: 'Nunito', sans-serif;
   font-size: 20px; }
 
@@ -467,3 +467,5 @@ h1 {
 
 #box6 {
   display: none; }
+
+/*# sourceMappingURL=style.css.map */
