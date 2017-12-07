@@ -86,7 +86,8 @@ h3 {
 .waves-effect {
   position: absolute;
   top: 240px;
-  right: 50px; }
+  right: 50px;
+  z-index: 2; }
 
 .btn-large {
   position: absolute;

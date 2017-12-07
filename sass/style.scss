@@ -7,11 +7,25 @@ body{
   width: 768px;
   margin: 0 auto;
 }
+
+#splash-page{
+   background-color: #76b2b7;
+  width: 786px;
+  height:1024px;
+ position:absolute;
+ z-index:1;
+
+
+  
+}
+
 .page-container{
   height:100%;
   width: 100%;
   position: relative;
   margin: 0 auto;
+  z-index:2;
+
 }
 #header{
     width: 100%;

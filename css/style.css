@@ -135,7 +135,8 @@ h3 {
 .waves-effect {
   position: absolute;
   top: 240px;
-  right: 50px; }
+  right: 50px;
+  z-index: 2; }
 
 .btn-large {
   position: absolute;
@@ -147,7 +148,7 @@ h3 {
   font-size: 25px; }
 
 .btn-large:hover {
-  background-color: #5CB85C; }
+  background-color: #5cb85c; }
 
 .previous {
   left: 50px; }
@@ -392,11 +393,19 @@ body {
   width: 768px;
   margin: 0 auto; }
 
+#splash-page {
+  background-color: #76b2b7;
+  width: 786px;
+  height: 1024px;
+  position: absolute;
+  z-index: 1; }
+
 .page-container {
   height: 100%;
   width: 100%;
   position: relative;
-  margin: 0 auto; }
+  margin: 0 auto;
+  z-index: 2; }
 
 #header {
   width: 100%;
@@ -467,5 +476,3 @@ h1 {
 
 #box6 {
   display: none; }
-
-/*# sourceMappingURL=style.css.map */
