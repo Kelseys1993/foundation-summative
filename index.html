@@ -21,13 +21,16 @@
 
   <div id='splash-page'> 
 
-      <h1>Roadtrippers</h1>
+      <h1 id='header2'>Roadtrippers</h1>
 
-      <img src="img/tnz.png" alt='logo' id='logo'>
+      <img src="img/tnz.png" alt='logo' id='logo2'>
 
-      <p id='logo-words'>New Zealand Tourisim</p>
+      <p id='logo-words2'>New Zealand Tourisim</p>
+<a id='begin'>Enter</a>
 
   </div>
+
+  <div id='main-content'>
     <div id='header'>
       <div>
         <h1>Roadtrippers</h1>
@@ -89,9 +92,10 @@
 </div> <!-- slider container ends -->
 
 <!-- form one begins   -->
+ 
 <div class='form-container' id='formOne'>
+ <form id="demo-form" name='theForm' >
 
-  <form id="demo-form" name='theForm' >
   <div class='form-section'>
     <h3> Choose your starting location</h3>
     <p id='one'>
@@ -170,27 +174,27 @@
      <h3 id="passengers"> Number of Passengers</h3>
     <label>
       <input type="radio" name="group3" value="1" class='radios'/>
-      <img src="img/one.png" id='valueOne'>
+      <img src="img/one.png" id='valueOne' alt='one'>
   </label>
   <label>
       <input type="radio" name="group3" value="2" class='radios'/>
-      <img src="img/two.png" id='valueTwo'>
+      <img src="img/two.png" id='valueTwo'  alt='two'>
   </label>
    <label>
       <input type="radio" name="group3" value="3" class='radios'/>
-      <img src="img/three.png" id='valueThree'>
+      <img src="img/three.png" id='valueThree'  alt='three'>
   </label>
    <label>
       <input type="radio" name="group3" value="4" class='radios'/>
-      <img src="img/four.png" id='valueFour'>
+      <img src="img/four.png" id='valueFour'  alt='four'>
   </label>
    <label>
       <input type="radio" name="group3" value="5" class='radios'/>
-      <img src="img/five.png" id='valueFive'>
+      <img src="img/five.png" id='valueFive'  alt='five'>
   </label>
    <label>
       <input type="radio" name="group3" value="6" class='radios'/>
-      <img src="img/six.png" id='valueSix'>
+      <img src="img/six.png" id='valueSix'  alt='six'>
   </label>
 <a class="waves-effect waves-light btn-large" id='thirdBtn'>Next</a>
   <a class="waves-effect waves-light btn-large previous" id='prevTwo'>Previous</a>
@@ -204,16 +208,16 @@
   <div class='form-section'>
    <h3 id="vehicle"> Choose a vehicle</h3>
     <div id='vehicleOne'>
-      <img src='img/motobike.png' class='modal-trigger' href="#modal1" id='trigger1'>
+      <img src='img/motobike.png' class='modal-trigger' href="#modal1" id='trigger1' alt='motorbike'>
     </div>
     <div id='vehicleTwo'>
-      <img src='img/small-car.png' class='modal-trigger' href="#modal2" id='trigger2'>
+      <img src='img/small-car.png' class='modal-trigger' href="#modal2" id='trigger2' alt='samll car'>
     </div>
       <div id='vehicleThree'>
-      <img src='img/large-car.png' class='modal-trigger' href="#modal3" id='trigger3'>
+      <img src='img/large-car.png' class='modal-trigger' href="#modal3" id='trigger3' alt='large car'>
     </div>
       <div id='vehicleFour'>
-      <img src='img/motorhome.png' class='modal-trigger' href="#modal4" id='trigger4'>
+      <img src='img/motorhome.png' class='modal-trigger' href="#modal4" id='trigger4' alt='motorhome'>
     </div>
     <div id='error-message'>
       <p> No vehicle avalaible for those options </p>
@@ -221,6 +225,7 @@
 
   <a class="waves-effect waves-light btn-large previous" id='prevThree'>Previous</a>
   </div>
+  
 </div>
 <!-- form four ends -->
 
@@ -228,9 +233,10 @@
   <div id="modal1" class="modal">
     <div class="modal-content">
       <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">X</a>
-      <h4 id='heading1'>BMW R1200GS</h4>
+      <h4>BMW R1200GS</h4>
+      <p class='price'>$109per day</p>
       <div>
-        <img src='img/motobike.png' alt='motorbike' id='modalimage1'>
+        <img src='img/motobike.png' alt='motorbike' class='modalImage'>
     
         <div> 
           <div class='trip-cost'>
@@ -263,11 +269,11 @@
     <div class="modal-content">
       <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">X</a>
       
-      <h4 id='heading2'>Hyundai New i10</h4>
-      <p>$129per day</p>
+      <h4>Hyundai New i10</h4>
+      <p class='price'>$129per day</p>
       <div>
         
-        <img src='img/small-car.png' alt='small-car' id='modalimage2'>
+        <img src='img/small-car.png' alt='small-car' class='modalImage'>
        
         <div> 
           <div class='trip-cost'>
@@ -301,11 +307,12 @@
       <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">X</a>
       
       
-      <h4 id='heading3'>Hyundai i40 Tourer</h4>
+      <h4>Hyundai i40 Tourer</h4>
+      <p class='price'>$144per day</p>
       
       <div>
         
-        <img src='img/large-car.png' alt='large-car' id='modalimage3'>
+        <img src='img/large-car.png' alt='large-car' class='modalImage'>
 
        
         <div> 
@@ -340,10 +347,11 @@
       <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">X</a>
       
     
-      <h4 id='heading4'>Gulf Stream</h4>
+      <h4>Gulf Stream</h4>
+      <p class='price'>$200per day</p>
       <div>
  
-        <img src='img/motorhome.png' alt='motorhome' id='modalimage4'>
+        <img src='img/motorhome.png' alt='motorhome' class='modalImage'>
         <div> 
           <div class='trip-cost'>
             <p>Trip Cost</p>          
@@ -372,7 +380,7 @@
 
 <div id='footer'> 
 </div>
-
+</div> <!-- main content ends -->
 
 </div> <!-- page container div ends -->
 

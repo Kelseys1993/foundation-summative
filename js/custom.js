@@ -16,6 +16,11 @@ var vehicle1 = document.getElementById('vehicleOne');
 var vehicle2 = document.getElementById('vehicleTwo');
 var vehicle3 = document.getElementById('vehicleThree');
 var vehicle4 = document.getElementById('vehicleFour');
+var start = document.getElementById('begin');
+var carA = document.getElementsByClassName('btn-large');
+var carB = document.getElementsByClassName('btn-large');
+var carC = document.getElementsByClassName('btn-large');
+var carD = document.getElementsByClassName('btn-large');
 var rdValue; 
 var radioValues = [];
 var radioValues2 =[];
@@ -28,6 +33,7 @@ var totalCost = [];
 
 sub.addEventListener('click', minus, false);
 add.addEventListener('click', plus, false);
+start.addEventListener('click', enter, false);
 close[0].addEventListener('click', startAgain, false);
 close[1].addEventListener('click', startAgain, false);
 close[2].addEventListener('click', startAgain, false);
@@ -44,6 +50,9 @@ trigger1.addEventListener('click', fillModal1, false);
 trigger2.addEventListener('click', fillModal2, false);
 trigger3.addEventListener('click', fillModal3, false);
 trigger4.addEventListener('click', fillModal4, false);
+add.addEventListener('click', buttonClickable, false);
+
+btn[3].style.pointerEvents = 'none';
 
 
 
@@ -55,11 +64,7 @@ distances();
 distances2();
 distances3();
 distances4();
-showCar1();
-showCar2();
-showCar3();
-showCar4();
-
+carInit();
 }
 
 function plus(){
@@ -74,11 +79,16 @@ function minus(){
     countEl.value = count;
   }  
 }
+function enter(){
+document.getElementById('splash-page').style.display = 'none';
+document.getElementById('main-content').style.display = 'block';
+}
+
 function nextDiv(){
   if($('input:radio:checked').length > 0){
 document.getElementById('formOne').style.display = 'none';
 document.getElementById('formTwo').style.display = 'block';
-}
+} 
 }
 function prevDiv(){
 document.getElementById('formTwo').style.display = 'none';
@@ -98,13 +108,18 @@ document.getElementById('formThree').style.display = 'none';
 document.getElementById('formTwo').style.display = 'block';
 
 }
+
+function buttonClickable(){
+  btn[3].style.pointerEvents = 'auto';
+}
 function nextDiv3(){
 
 if($('.radios').is(':checked') && $('#count').val().length > 0){
 document.getElementById('formThree').style.display = 'none';
 document.getElementById('formFour').style.display = 'block';
+} 
 
-}
+
   
 }
 function prevDiv3(){
@@ -258,25 +273,33 @@ function getRadioValue3() {
       }
       else rdValue = 'noRadioChecked';
     }
+
     if (rdValue == '1') {
     radioValues3.push(parseInt(rdValue));
+    console.log(radioValues3);
     } else if( rdValue == '2'){
      radioValues3.push(parseInt(rdValue));
+     console.log(radioValues3);
     } else if ( rdValue == '3'){
      radioValues3.push(parseInt(rdValue));
+     console.log(radioValues3);
     } else if ( rdValue == '4'){
      radioValues3.push(parseInt(rdValue));
+     console.log(radioValues3);
     } else if ( rdValue == '5'){
      radioValues3.push(parseInt(rdValue));
+     console.log(radioValues3);
     }else if ( rdValue == '6'){
      radioValues3.push(parseInt(rdValue));
-    } else {
-    console.log('break');
+     console.log(radioValues3);
+    }else{
+      console.log('break');
     }
+
     if (countEl.value > 0){
     radioValues4.push( parseInt(countEl.value));
     }else{
-    console.log('break');
+      console.log('break');
     }
 }
 
@@ -374,47 +397,24 @@ function distances2(){
 
 }
 
+function showCar(vehicle, minA, maxA, minB, maxB){
+   if((radioValues3[0] >= minA && radioValues3[0]  <= maxA) &&  (radioValues4[0] >= minB && radioValues4[0]  <= maxB)){
+      vehicle.style.display = 'block'; 
+   }else{
+    vehicle.style.opacity = '0.4';
+    vehicle.style.transform = 'none';
+    vehicle.style.pointerEvents = 'none';
+  }
+}
 
-function showCar1(){
-  if( radioValues3[0] === 1 && (radioValues4[0] >= 1 && radioValues4[0] <= 5)){
-   vehicle1.style.display = 'block'; 
- 
-  } else{
-    vehicle1.style.opacity = '0.4';
-    vehicle1.style.transform = 'none';
-    vehicle1.style.pointerEvents = 'none';
-  }
+function carInit(){
+carA.onclick = showCar( vehicle1, 1, 1, 1, 5);
+carB.onclick = showCar( vehicle2, 1, 2, 1, 10);
+carC.onclick = showCar( vehicle3, 1, 5, 3, 10);
+carD.onclick = showCar( vehicle4, 1, 6, 2, 15);
 }
-function showCar2(){
-   if((radioValues3[0] >= 1 && radioValues3[0]  <= 2) && (radioValues4[0] >= 1 && radioValues4[0] <= 10)){
-      vehicle2.style.display = 'block'; 
-    
-   }else{
-    vehicle2.style.opacity = '0.4';
-    vehicle2.style.transform = 'none';
-    vehicle2.style.pointerEvents = 'none';
 
-  }
-}
-function showCar3(){
-   if((radioValues3[0] >= 1 && radioValues3[0]  <= 5) && (radioValues4[0] >= 3 && radioValues4[0] <= 10)){
-      vehicle3.style.display = 'block'; 
-    
-   }else{
-    vehicle3.style.opacity = '0.4';
-    vehicle3.style.transform = 'none';
-    vehicle3.style.pointerEvents = 'none';
-  }
-}
-function showCar4(){
-   if((radioValues3[0] >= 2 && radioValues3[0]  <= 6) &&  (radioValues4[0] >= 2 && radioValues4[0]  <= 15)){
-      vehicle4.style.display = 'block'; 
-   }else{
-    vehicle4.style.opacity = '0.4';
-    vehicle4.style.transform = 'none';
-    vehicle4.style.pointerEvents = 'none';
-  }
-}
+
 function fillModal1(){
     $('#rental1').empty();
     $('#distance1').empty();
