@@ -59,6 +59,10 @@
   margin-left: 10%;
   margin-top: 15%; }
 
+.contain {
+  width: 0%;
+  height: 350px; }
+
 h3 {
   position: absolute;
   left: 20%; }
@@ -147,7 +151,7 @@ h3 {
   font-size: 25px; }
 
 .btn-large:hover {
-  background-color: #5cb85c; }
+  background-color: #5CB85C; }
 
 .previous {
   left: 50px; }
@@ -504,3 +508,5 @@ h1 {
 
 #box6 {
   display: none; }
+
+/*# sourceMappingURL=style.css.map */
