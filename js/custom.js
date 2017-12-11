@@ -67,6 +67,7 @@ function init2(){
     distances3();
     distances4();
     carInit();
+  
 }
 
 function enter(){
@@ -393,7 +394,6 @@ function carInit(){
     carC.onclick = showCar( vehicle3, 1, 5, 3, 10);
     carD.onclick = showCar( vehicle4, 1, 6, 2, 15);
 }
-
 
 function fillModal1(){
     $('#rental1').empty();

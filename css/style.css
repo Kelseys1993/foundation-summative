@@ -151,7 +151,7 @@ h3 {
   font-size: 25px; }
 
 .btn-large:hover {
-  background-color: #5CB85C; }
+  background-color: #5cb85c; }
 
 .previous {
   left: 50px; }
@@ -283,6 +283,14 @@ label > input:checked + img {
   width: 185px;
   height: 95px; }
 
+#error {
+  position: absolute;
+  right: 20px;
+  top: 270px;
+  font-size: 15px;
+  font-family: 'Nunito', sans-serif;
+  width: 320px; }
+
 #vehicleThree {
   position: absolute;
   top: 20%;
@@ -395,14 +403,14 @@ body {
 
 #header2 {
   font-size: 120px;
-  top: 30%;
+  top: 40%;
   left: 24%; }
 
 #logo2 {
   width: 270px;
   height: 200px;
   position: absolute;
-  top: 10%;
+  top: 20%;
   left: 34%; }
 
 #logo-words2 {
@@ -411,7 +419,7 @@ body {
   position: absolute;
   font-size: 40px;
   left: 34%;
-  top: 25%; }
+  top: 35%; }
 
 #begin {
   color: white;
@@ -421,7 +429,7 @@ body {
   background-color: #5CB85C;
   -webkit-tap-highlight-color: transparent;
   position: absolute;
-  top: 60%;
+  top: 70%;
   left: 35%;
   width: 200px;
   height: 60px;
@@ -508,5 +516,3 @@ h1 {
 
 #box6 {
   display: none; }
-
-/*# sourceMappingURL=style.css.map */

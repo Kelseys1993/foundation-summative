@@ -10,6 +10,8 @@
     margin-left: 10%;  
     margin-top: 15%; 
 
+
+    
    
   }
 .contain{
@@ -231,6 +233,7 @@
 
   #formFour{
     display: none;
+
   }
   #vehicle{
     left:35%
@@ -246,6 +249,8 @@
 
     
   }
+ 
+
   #vehicleOne:hover,  #vehicleTwo:hover, #vehicleThree:hover, #vehicleFour:hover{
     transform: scale(1.1);
   }
@@ -258,6 +263,14 @@
     width:185px;
     height: 95px;
     
+  }
+  #error { 
+    position: absolute;
+    right:20px;
+    top: 270px;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    width: 320px;
   }
     #vehicleThree{
     position: absolute;
