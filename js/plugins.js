@@ -28,7 +28,28 @@
    });
 
    $('.modal').modal();
-  
+
+  $('.tooltip').tooltipster({
+    trigger: 'custom',
+    triggerClose:{
+      click:true,
+      hover:true
+    }
+   
+  });
+
+$('.tooltip2').tooltipster({
+    trigger: 'custom',
+    triggerClose:{
+      click:true,
+      hover:true
+    }
+  });
+
  });
 
+
+ 
+
+      
   

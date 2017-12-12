@@ -32,7 +32,7 @@ var fuelCost = [];
 var hireCost = [];
 var totalCost = [];
 
-init()
+init();
 
 function init(){ 
     sub.addEventListener('click', minus, false);
@@ -45,6 +45,7 @@ function init(){
     home.addEventListener('click', startAgain, false);
     btn[2].addEventListener('click', prevDiv, false);
     btn[0].addEventListener('click', nextDiv, false);
+    // btn[0].addEventListener('click', tool, false);
     btn[4].addEventListener('click', prevDiv2, false);
     btn[1].addEventListener('click', nextDiv2, false);
     btn[5].addEventListener('click', prevDiv3, false);
@@ -67,6 +68,7 @@ function init2(){
     distances3();
     distances4();
     carInit();
+   
   
 }
 
@@ -80,7 +82,10 @@ function nextDiv(){
   if($('input:radio:checked').length > 0){
     document.getElementById('formOne').style.display = 'none';
     document.getElementById('formTwo').style.display = 'block';
-} 
+    $('.tooltip').tooltipster('close');
+} else{
+   $('.tooltip').tooltipster('open');
+}
 }
 
 function prevDiv(){
@@ -92,7 +97,10 @@ function nextDiv2(){
  if($('input:radio:checked').length > 1){
     document.getElementById('formTwo').style.display = 'none';
     document.getElementById('formThree').style.display = 'block';
-} 
+    $('.tooltip2').tooltipster('close');
+} else{
+   $('.tooltip2').tooltipster('open');
+}
 }
 
 function prevDiv2(){
@@ -201,7 +209,7 @@ function minus(){
 
 function getRadioValue() {
     // group1 radio values
-    var radios = theForm.elements['group1'];
+    var radios = theForm.elements.group1;
 
     for (var i=0; i<radios.length; i++) {
         var someRadio = radios[i];
@@ -227,7 +235,7 @@ function getRadioValue() {
 
 function getRadioValue2() {
     // group2 radio values
-    var radios = theForm.elements['group2'];
+    var radios = theForm.elements.group2;
    
     for (var i=0; i<radios.length; i++) {
         var someRadio = radios[i];
@@ -256,7 +264,7 @@ function getRadioValue2() {
 
 function getRadioValue3() {
     // group3 radio values
-    var radios = theForm.elements['group3'];
+    var radios = theForm.elements.group3;
 
     for (var i=0; i<radios.length; i++) {
       var someRadio = radios[i];
